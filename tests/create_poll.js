@@ -11,20 +11,49 @@ Gender = `Мужчины`;
 years_min = `17`;
 years_max = `64`;
 
-Titlenotification = `Тестовое предварительное уведомление ${phoneNumber}`;
-Headernotification = `Заголовок предварительного уведомления`;
-Commentnotification = `Текст предварительного уведомления`;
+question_title = `Тестовый вопрос`
+answer_1 = `11`
+answer_2 = `22`
+
+question_title2 = `Другой тестовый вопрос`
+answer_21 = `33`
+answer_22 = `44`
+answer_23 = `55`
+
+
+delimiter_name = `Тестовый разделитель`
+delimiter_comment = `Комментарий для разделителя`
+description_for_comment = `Описание для разделителя`
+
+delimiter_name2 = `Отредактированный разделитель`
+delimiter_comment2 = `Отредактированный комментарий для разделителя`
+description_for_comment2 = `Отредактированное описание для разделителя`
+
+
+
+
+
+
+
+
+
+
+
+
+// Titlenotification = `Тестовое предварительное уведомление ${phoneNumber}`;
+// Headernotification = `Заголовок предварительного уведомления`;
+// Commentnotification = `Текст предварительного уведомления`;
 Name2 = `Тестовый опрос ${phoneNumber2}`;
 Comment2 = `Комментарий к тестовому опросу 2`;
-Checkbox2 = `Анонимный`;
-Titlenotification2 = `Тестовое предварительное уведомление ${phoneNumber2}`;
-Headernotification2 = `Заголовок предварительного уведомления 2`;
-Commentnotification2 = `Текст предварительного уведомления 2`;
+// Checkbox2 = `Анонимный`;
+// Titlenotification2 = `Тестовое предварительное уведомление ${phoneNumber2}`;
+// Headernotification2 = `Заголовок предварительного уведомления 2`;
+// Commentnotification2 = `Текст предварительного уведомления 2`;
 
 button_next = "//button[contains(.,'Далее')]"
 
 module.exports = {
-  "Создание опроса": function (browser) {
+  'Создание опроса': function (browser) {
     browser.page.Login().Auth()
     browser
       .useXpath()
@@ -48,26 +77,26 @@ module.exports = {
       // Добавление вопроса
       .click("//span[contains(.,'Добавить вопрос')]")
       .click("//input[@name='text']")
-      .setValue("//input[@name='text']", `Тестовый вопрос`)
+      .setValue("//input[@name='text']", question_title)
       .click("//span[contains(.,'Добавить вариант ответа')]")
       .click("//span[contains(.,'Добавить вариант ответа')]")
-      .setValue("//input[@name='text0']", `11`)
-      .setValue("//input[@name='text1']", `22`)
+      .setValue("//input[@name='text0']", answer_1)
+      .setValue("//input[@name='text1']", answer_2)
       .click("//div[3]/div[2]/button[2]")
       .waitForElementNotPresent("//h3[contains(.,'Добавление вопроса')]", 10000)
-      .waitForElementVisible("//div[3][contains(.,'Тестовый вопрос')]", 10000, 'Вопрос после создания присутствует')
+      .waitForElementVisible(`//div[3][contains(.,'${question_title}')]`, 10000, 'Вопрос после создания присутствует')
 
       // Добавление разделителя
       .click("//span[contains(.,'Добавить разделитель')]")
       .click("//input[@name='title']")
-      .setValue("//input[@name='title']", `Тестовый разделитель`)
+      .setValue("//input[@name='title']", delimiter_name)
       .click("//input[@name='comment']")
-      .setValue("//input[@name='comment']", `Комментарий для разделителя`)
+      .setValue("//input[@name='comment']", delimiter_comment)
       .click("//input[@name='description']")
-      .setValue("//input[@name='description']", `Описание для разделителя`)
+      .setValue("//input[@name='description']", description_for_comment)
       .click("//div[3]/div[2]/button/span")
       .waitForElementNotPresent("//h3[contains(.,'Добавление разделителя')]", 10000)
-      .waitForElementVisible("//div[3][contains(.,'Тестовый разделитель')]", 10000, 'Разделитель после создания присутствует')
+      .waitForElementVisible(`//div[3][contains(.,'${delimiter_name}')]`, 10000, 'Разделитель после создания присутствует')
 
       .click(button_next)
       .pause(2000)
@@ -174,29 +203,104 @@ module.exports = {
       .waitForElementVisible("//h3[contains(.,'Обратите внимание!')]", 10000, 'Появляется уведомление "Уведомление может быть выслано в течении 1 часа."')
       .waitForElementVisible("//button[contains(.,'Понятно')]", 10000, 'Появилась кнопка Понятно')
       .click("//button[contains(.,'Понятно')]")
-      .waitForElementVisible("//ng-component/div/div/div[contains(.,'Персональные опросы')]", 10000, 'Открылась страница опросов')
-      .waitForElementVisible("//clr-dg-row", 10000, 'Таблица опросов загрузилась')
-      // .click("(//button[@type='button'])[9]")
-      // .waitForElementVisible("(//button[@type='button'])[10]", 10000)
-      // .click("//input[@name='condition']")
-      // .setValue("//input[@name='condition']", Name)
-      // .click("//form/div[2]/button")
-      // .pause(2000)
-      // .click("(//button[@type='button'])[9]")
+
+      // Перелогинивание
+    browser.page.Relogin().Open()
+
+      // Поиск 
+    browser
+      // .click(`//button[contains(.,'Запланированные')]`)
+      .click(`//input[@name='condition']`)
+      .clearValue(`//input[@name='condition']`)
+      .setValue(`//input[@name='condition']`, Name)
+      .click(`//form/div[2]/button`)
+      .waitForElementVisible(`//button[contains(.,'Запланированные')]`, 10000, 'Кнопка Запланированные доступна')
+      .click(`//button[contains(.,'Запланированные')]`)
       .waitForElementVisible(`//clr-dg-cell[2]/div/div[contains(.,'${Name}')]`, 10000, 'В списке вопросов присутствует созданный опрос')
-      
-      // Проверки создания опроса
-      // .moveToElement("//div[@id='clr-dg-row320']/div[2]/div/clr-dg-cell[2]/div/div[2]/clr-tooltip")
-      .waitForElementVisible(`(//DIV[@_ngcontent-krd-c201=''][text()=' Тестовый опрос 1816 ']/../../..//BUTTON[@_ngcontent-krd-c201=''])[3]`, 10000)
-      // .click(`(//DIV[@_ngcontent-krd-c201=''][text()=' ${Name} ']/../../..//BUTTON[@_ngcontent-krd-c201=''])[3]`)
+    },
 
-      // .click("//a[contains(text(),'Редактировать')]")
-      // .waitForElementVisible(`//clr-dg-cell[2]/div/div[contains(.,' ${Name} ')]`, 10000, '...')
-      // .waitForElementVisible("//div[2]/div/div/div[contains(.,'Основное')]", 10000, 'Открылась страница опроса')
-      // .waitForElementVisible("//div[2]/div/div/div[contains(.,'Основное')]", 10000, 'Открылась страница опроса')
-
-
+  'Редактирование опроса': function (browser) {
+    browser
+      .click(`//clr-dropdown/button`)
+      .click(`//a[contains(text(),'Редактировать')]`)
+      .waitForElementVisible(`//input[@name='title']`, 10000, 'Форма загрузилась, поле ввода доступно')
+      .click(`//input[@name='title']`)
+      .clearValue(`//input[@name='title']`)
+      .setValue(`//input[@name='title']`, Name2)
+      .click("//textarea[@name='comment']")
       .pause(5000)
-      
+      .setValue("//textarea[@name='comment']", Comment2)
+      .click(button_next)
+
+      // Редактирование вопроса
+
+      // Просмотр вопроса через глазок
+      .click(`//DIV[text()='${question_title}']/..//BUTTON/app-icon[@name='eyeClosed']`)
+      .waitForElementVisible(`//clr-modal/div/div/div[2]/div/div/div/div[contains(.,'${question_title}')]`, 10000, 'Название вопроса правильное')
+      .waitForElementVisible(`//div/div[2]/div/div[2]/div[2]/div/div[contains(.,'${answer_1}')]`, 10000, 'Название 1 ответа правильное')
+      .waitForElementVisible(`//div/div[2]/div/div[2]/div[2]/div/div[contains(.,'${answer_2}')]`, 10000, 'Название 2 ответа правильное')
+      .click(`//div[3]/div[2]/button/span[contains(.,'Редактировать')]`)
+      .pause(1000)
+      .waitForElementVisible(`//span[contains(.,'Отмена')]`, 10000, 'Открывается pop up редактирования вопроса, кнопка отмена доступна')
+      .click(`//span[contains(.,'Отмена')]`)
+      .waitForElementVisible(`//DIV[text()='${question_title}']/..//BUTTON/app-icon[@name='edit']`, 10000, 'Опрос и кнопка глазок доступны')
+      .pause(1000)
+      // .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Вопросы')]`, 10000, 'Открылась страница добавления вопросов')
+
+      // Редактирование вопроса через карандаш
+      .click(`//DIV[text()='${question_title}']/..//BUTTON/app-icon[@name='edit']`)
+      .waitForElementVisible(`//h3[contains(.,'Редактирование вопроса')]`, 10000, 'Открывается pop up редактирования вопроса')
+      .click("//input[@name='text']")
+      .clearValue(`//input[@name='text']`)
+      .setValue("//input[@name='text']", question_title2)
+      // .waitForElementVisible(`//input[@name='text0']`, 10000, 'Открывается pop up редактирования вопроса')
+      .click("//input[@name='text0']")
+      .clearValue(`//input[@name='text0']`)
+      .setValue("//input[@name='text0']", answer_21)
+      // .waitForElementVisible(`//input[@name='text1']`, 10000, 'Открывается pop up редактирования вопроса')
+      .click("//input[@name='text1']")
+      .clearValue(`//input[@name='text1']`)
+      .setValue("//input[@name='text1']", answer_22)
+      .click("//span[contains(.,'Добавить вариант ответа')]")
+      // .waitForElementVisible(`//input[@name='text2']`, 10000, 'Открывается pop up редактирования вопроса')
+      .click("//input[@name='text2']")
+      .clearValue(`//input[@name='text2']`)
+      .setValue("//input[@name='text2']", answer_23)
+      .click("//span[text()='Сохранить']")
+      .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Вопросы')]`, 10000, 'Открылась страница добавления вопросов')
+
+      // Редактирование разделителя
+
+      // Просмотр разделителя через глазок
+      .waitForElementVisible(`//DIV[text()='${delimiter_name}']/..//BUTTON/app-icon[@name='eyeClosed']`, 10000, 'Опрос и кнопка глазок доступны')
+      .pause(2000)
+      .click(`//DIV[text()='${delimiter_name}']/..//BUTTON/app-icon[@name='eyeClosed']`)
+      .waitForElementVisible(`//h3[contains(.,'${delimiter_name}')]`, 10000, 'Название разделителя правильное')
+      .click(`//span[contains(.,'Закрыть')]`)
+      .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Вопросы')]`, 10000, 'Открылась страница добавления вопросов')
+
+      // Редактирование разделителя через карандаш
+      .click(`//DIV[text()='${delimiter_name}']/..//BUTTON/app-icon[@name='edit']`)
+      .waitForElementVisible(`//h3[contains(.,'Редактирование разделителя')]`, 10000, 'Открывается pop up редактирования разделителя')
+      .pause(1000)
+      .click("//input[@name='title']")
+      .clearValue(`//input[@name='title']`)
+      .setValue("//input[@name='title']", delimiter_name2)
+      .pause(1000)
+      .click("//input[@name='comment']")
+      .clearValue(`//input[@name='comment']`)
+      .setValue("//input[@name='comment']", delimiter_comment2)
+      .pause(1000)
+      .click("//input[@name='description']")
+      .clearValue(`//input[@name='description']`)
+      .setValue("//input[@name='description']", description_for_comment2)
+      .pause(1000)
+      .click(`//span[contains(.,'Сохранить')]`)
+      .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Вопросы')]`, 10000, 'Открылась страница добавления вопросов')
+      .click(button_next)
+
+
+      .pause(50000)
+
   }
 };

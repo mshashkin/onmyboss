@@ -1,279 +1,703 @@
-22:43:43.161 INFO - Launching a standalone Selenium Server
-22:43:43.279 INFO - Java: Oracle Corporation 25.261-b12
-22:43:43.279 INFO - OS: Windows 10 10.0 amd64
-22:43:43.286 INFO - v2.53.0, with Core v2.53.0. Built from revision 35ae25b
-22:43:43.334 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-22:43:43.334 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-22:43:43.342 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+21:37:53.723 INFO - Launching a standalone Selenium Server
+21:37:53.840 INFO - Java: Oracle Corporation 25.261-b12
+21:37:53.840 INFO - OS: Windows 10 10.0 amd64
+21:37:53.846 INFO - v2.53.0, with Core v2.53.0. Built from revision 35ae25b
+21:37:53.893 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+21:37:53.893 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+21:37:53.902 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
 registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
-22:43:43.343 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
-22:43:43.343 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
-22:43:43.480 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4445/wd/hub
-22:43:43.480 INFO - Selenium Server is up and running
-22:43:44.099 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Create Question Open Question, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-22:43:44.106 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Create Question Open Question, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 42706
+21:37:53.902 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+21:37:53.902 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+21:37:54.039 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4445/wd/hub
+21:37:54.040 INFO - Selenium Server is up and running
+21:37:54.640 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Create Poll, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:37:54.646 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Create Poll, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 2967
 Only local connections are allowed.
-[1605296627.571][WARNING]: Timed out connecting to Chrome, retrying...
-22:43:49.627 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Create Question Open Question, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-22:43:49.634 INFO - Executing: [get: https://ohmyboss1.dsml.ru/login])
-22:43:51.235 INFO - Done: [get: https://ohmyboss1.dsml.ru/login]
-22:43:51.239 INFO - Executing: [maximise window])
-[1605296633.258][WARNING]: Timed out connecting to Chrome, retrying...
-22:43:55.401 INFO - Done: [maximise window]
-22:43:55.405 INFO - Executing: [find element: By.cssSelector: input[name=email]])
-22:43:55.430 INFO - Done: [find element: By.cssSelector: input[name=email]]
-22:43:55.434 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]])
-22:43:55.519 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]]
-22:43:55.523 INFO - Executing: [find element: By.cssSelector: input[name=password]])
-22:43:55.534 INFO - Done: [find element: By.cssSelector: input[name=password]]
-22:43:55.537 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]])
-22:43:55.580 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]]
-22:43:55.583 INFO - Executing: [find element: By.xpath: //button/span[2]])
-22:43:55.594 INFO - Done: [find element: By.xpath: //button/span[2]]
-22:43:55.597 INFO - Executing: [click: 2 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button/span[2]]])
-22:43:55.664 INFO - Done: [click: 2 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button/span[2]]]
-22:43:55.670 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:43:55.689 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:43:56.195 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:43:56.214 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:43:56.726 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:43:56.749 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:43:56.752 INFO - Executing: [is displayed: 3 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]])
-22:43:56.765 INFO - Done: [is displayed: 3 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]]
-22:43:56.769 INFO - Executing: [find element: By.xpath: //button[@type='button']])
-22:43:56.781 INFO - Done: [find element: By.xpath: //button[@type='button']]
-22:43:56.784 INFO - Executing: [click: 4 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[@type='button']]])
-22:43:57.025 INFO - Done: [click: 4 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[@type='button']]]
-22:43:57.028 INFO - Executing: [find elements: By.xpath: //a[contains(text(),'�������')]])
-22:43:57.047 INFO - Done: [find elements: By.xpath: //a[contains(text(),'�������')]]
-22:43:57.049 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]])
-22:43:57.081 INFO - Done: [is displayed: 5 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]]
-22:43:57.085 INFO - Executing: [find element: By.xpath: //a[contains(text(),'�������')]])
-22:43:57.110 INFO - Done: [find element: By.xpath: //a[contains(text(),'�������')]]
-22:43:57.112 INFO - Executing: [click: 5 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]])
-22:43:57.170 INFO - Done: [click: 5 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]]
-22:43:57.174 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:43:57.185 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:43:57.187 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]])
-22:43:57.201 INFO - Done: [is displayed: 6 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]]
-22:43:57.205 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������� ������')]])
-22:43:57.216 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������� ������')]]
-22:43:57.729 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������� ������')]])
-22:43:58.309 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������� ������')]]
-22:43:58.311 INFO - Executing: [is displayed: 7 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]])
-22:43:58.330 INFO - Done: [is displayed: 7 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]]
-22:43:58.333 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������� ������')]])
-22:43:58.350 INFO - Done: [find element: By.xpath: //span[contains(.,'�������� ������')]]
-22:43:58.353 INFO - Executing: [click: 7 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]])
-22:43:58.556 INFO - Done: [click: 7 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]]
-22:43:58.559 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������� ������')]])
-22:43:58.582 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������� ������')]]
-22:43:58.584 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������� ������')]]])
-22:43:58.597 INFO - Done: [is displayed: 8 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������� ������')]]]
-22:43:58.600 INFO - Executing: [find element: By.xpath: //label/span/span[2][contains(.,'�������� ������')]])
-22:43:58.615 INFO - Done: [find element: By.xpath: //label/span/span[2][contains(.,'�������� ������')]]
-22:43:58.617 INFO - Executing: [click: 9 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //label/span/span[2][contains(.,'�������� ������')]]])
-22:43:58.686 INFO - Done: [click: 9 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //label/span/span[2][contains(.,'�������� ������')]]]
-22:43:58.689 INFO - Executing: [find element: By.xpath: //input[@name='text']])
-22:43:58.707 INFO - Done: [find element: By.xpath: //input[@name='text']]
-22:43:58.709 INFO - Executing: [click: 10 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']]])
-22:43:58.806 INFO - Done: [click: 10 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']]]
-22:43:58.809 INFO - Executing: [find element: By.xpath: //input[@name='text']])
-22:43:58.827 INFO - Done: [find element: By.xpath: //input[@name='text']]
-22:43:58.829 INFO - Executing: [send keys: 10 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 6, 3, 7]])
-22:43:58.941 INFO - Done: [send keys: 10 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 6, 3, 7]]
-22:43:58.943 INFO - Executing: [find element: By.xpath: //div[4]/label/span])
-22:43:58.958 INFO - Done: [find element: By.xpath: //div[4]/label/span]
-22:43:58.960 INFO - Executing: [click: 11 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div[4]/label/span]])
-22:43:58.999 INFO - Done: [click: 11 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div[4]/label/span]]
-22:43:59.002 INFO - Executing: [find element: By.xpath: //div[2]/button[2]/span[contains(.,'��������')]])
-22:43:59.018 INFO - Done: [find element: By.xpath: //div[2]/button[2]/span[contains(.,'��������')]]
-22:43:59.020 INFO - Executing: [click: 12 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div[2]/button[2]/span[contains(.,'��������')]]])
-22:43:59.072 INFO - Done: [click: 12 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div[2]/button[2]/span[contains(.,'��������')]]]
-22:43:59.075 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:43:59.090 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:43:59.601 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:43:59.621 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:00.138 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:44:00.528 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:00.530 INFO - Executing: [is displayed: 13 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]])
-22:44:00.548 INFO - Done: [is displayed: 13 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]]
-22:44:00.551 INFO - Executing: [find element: By.xpath: //div/div/div])
-22:44:00.572 INFO - Done: [find element: By.xpath: //div/div/div]
-22:44:00.574 INFO - Executing: [click: 14 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div/div/div]])
-22:44:00.649 INFO - Done: [click: 14 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div/div/div]]
-22:44:00.651 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
-22:44:00.679 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
-22:44:00.680 INFO - Executing: [click: 15 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[contains(.,'�����')]]])
-22:44:00.800 INFO - Done: [click: 15 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[contains(.,'�����')]]]
-22:44:00.802 INFO - Executing: [get: https://ohmyboss1.dsml.ru/login])
-22:44:01.335 INFO - Done: [get: https://ohmyboss1.dsml.ru/login]
-22:44:01.339 INFO - Executing: [maximise window])
-22:44:01.353 INFO - Done: [maximise window]
-22:44:01.356 INFO - Executing: [find element: By.cssSelector: input[name=email]])
-22:44:01.375 INFO - Done: [find element: By.cssSelector: input[name=email]]
-22:44:01.377 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]])
-22:44:01.444 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]]
-22:44:01.446 INFO - Executing: [find element: By.cssSelector: input[name=password]])
-22:44:01.469 INFO - Done: [find element: By.cssSelector: input[name=password]]
-22:44:01.473 INFO - Executing: [send keys: 17 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]])
-22:44:01.519 INFO - Done: [send keys: 17 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]]
-22:44:01.522 INFO - Executing: [find element: By.xpath: //button/span[2]])
-22:44:01.532 INFO - Done: [find element: By.xpath: //button/span[2]]
-22:44:01.534 INFO - Executing: [click: 18 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button/span[2]]])
-22:44:01.596 INFO - Done: [click: 18 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button/span[2]]]
-22:44:01.599 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:44:01.631 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:44:02.136 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:44:02.160 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:44:02.161 INFO - Executing: [is displayed: 19 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]])
-22:44:02.175 INFO - Done: [is displayed: 19 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]]
-22:44:02.177 INFO - Executing: [find element: By.xpath: //button[@type='button']])
-22:44:02.190 INFO - Done: [find element: By.xpath: //button[@type='button']]
-22:44:02.192 INFO - Executing: [click: 20 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[@type='button']]])
-22:44:02.228 INFO - Done: [click: 20 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[@type='button']]]
-22:44:02.230 INFO - Executing: [find elements: By.xpath: //a[contains(text(),'�������')]])
-22:44:02.260 INFO - Done: [find elements: By.xpath: //a[contains(text(),'�������')]]
-22:44:02.262 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]])
-22:44:02.281 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]]
-22:44:02.284 INFO - Executing: [find element: By.xpath: //a[contains(text(),'�������')]])
-22:44:02.296 INFO - Done: [find element: By.xpath: //a[contains(text(),'�������')]]
-22:44:02.298 INFO - Executing: [click: 21 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]])
-22:44:02.540 INFO - Done: [click: 21 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]]
-22:44:02.542 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:44:02.560 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:02.562 INFO - Executing: [is displayed: 22 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]])
-22:44:02.579 INFO - Done: [is displayed: 22 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]]
-22:44:02.582 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������� ������')]])
-22:44:02.596 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������� ������')]]
-22:44:03.104 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������� ������')]])
-22:44:03.700 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������� ������')]]
-22:44:03.702 INFO - Executing: [is displayed: 23 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]])
-22:44:03.718 INFO - Done: [is displayed: 23 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]]
-22:44:03.721 INFO - Executing: [find element: By.cssSelector: .custom-form-control-input])
-22:44:03.734 INFO - Done: [find element: By.cssSelector: .custom-form-control-input]
-22:44:03.735 INFO - Executing: [click: 24 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]])
-22:44:03.782 INFO - Done: [click: 24 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]]
-22:44:03.785 INFO - Executing: [find element: By.cssSelector: .custom-form-control-input])
-22:44:03.796 INFO - Done: [find element: By.cssSelector: .custom-form-control-input]
-22:44:03.798 INFO - Executing: [clear: 24 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]])
-22:44:03.818 INFO - Done: [clear: 24 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]]
-22:44:03.820 INFO - Executing: [find element: By.cssSelector: .custom-form-control-input])
-22:44:03.847 INFO - Done: [find element: By.cssSelector: .custom-form-control-input]
-22:44:03.849 INFO - Executing: [send keys: 24 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 6, 3, 7]])
-22:44:04.210 INFO - Done: [send keys: 24 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 6, 3, 7]]
-22:44:04.212 INFO - Executing: [find element: By.xpath: (//button[@type='button'])[8]])
-22:44:04.235 INFO - Done: [find element: By.xpath: (//button[@type='button'])[8]]
-22:44:04.237 INFO - Executing: [click: 25 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: (//button[@type='button'])[8]]])
-22:44:04.289 INFO - Done: [click: 25 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: (//button[@type='button'])[8]]]
-22:44:04.291 INFO - Executing: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1637')]])
-22:44:04.313 INFO - Done: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1637')]]
-22:44:04.315 INFO - Executing: [is displayed: 26 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1637')]]])
-22:44:04.329 INFO - Done: [is displayed: 26 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1637')]]]
-22:44:04.345 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������������')]])
-22:44:04.360 INFO - Done: [find element: By.xpath: //span[contains(.,'�������������')]]
-22:44:04.362 INFO - Executing: [click: 27 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������������')]]])
-22:44:04.465 INFO - Done: [click: 27 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������������')]]]
-22:44:04.468 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������� ������')]])
-22:44:04.484 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������� ������')]]
-22:44:04.486 INFO - Executing: [is displayed: 28 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������� ������')]]])
-22:44:04.502 INFO - Done: [is displayed: 28 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������� ������')]]]
-22:44:05.519 INFO - Executing: [find element: By.xpath: //input[@name='text']])
-22:44:05.540 INFO - Done: [find element: By.xpath: //input[@name='text']]
-22:44:05.542 INFO - Executing: [click: 29 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']]])
-22:44:05.578 INFO - Done: [click: 29 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']]]
-22:44:05.580 INFO - Executing: [find element: By.xpath: //input[@name='text']])
-22:44:05.601 INFO - Done: [find element: By.xpath: //input[@name='text']]
-22:44:05.602 INFO - Executing: [clear: 29 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']]])
-22:44:05.621 INFO - Done: [clear: 29 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']]]
-22:44:05.623 INFO - Executing: [find element: By.xpath: //input[@name='text']])
-22:44:05.632 INFO - Done: [find element: By.xpath: //input[@name='text']]
-22:44:05.634 INFO - Executing: [send keys: 29 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 7, 6, 5]])
-22:44:05.743 INFO - Done: [send keys: 29 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //input[@name='text']], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 7, 6, 5]]
-22:44:05.746 INFO - Executing: [find element: By.xpath: //div[2]/button[2]])
-22:44:05.761 INFO - Done: [find element: By.xpath: //div[2]/button[2]]
-22:44:05.763 INFO - Executing: [click: 30 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div[2]/button[2]]])
-22:44:05.820 INFO - Done: [click: 30 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div[2]/button[2]]]
-22:44:05.822 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:44:05.839 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:06.353 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:44:06.376 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:06.886 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:44:07.430 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:07.432 INFO - Executing: [is displayed: 31 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]])
-22:44:07.454 INFO - Done: [is displayed: 31 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]]
-22:44:07.456 INFO - Executing: [find element: By.xpath: //div/div/div])
-22:44:07.475 INFO - Done: [find element: By.xpath: //div/div/div]
-22:44:07.477 INFO - Executing: [click: 32 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div/div/div]])
-22:44:07.534 INFO - Done: [click: 32 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //div/div/div]]
-22:44:07.537 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
-22:44:07.555 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
-22:44:07.557 INFO - Executing: [click: 33 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[contains(.,'�����')]]])
-22:44:07.678 INFO - Done: [click: 33 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[contains(.,'�����')]]]
-22:44:07.680 INFO - Executing: [get: https://ohmyboss1.dsml.ru/login])
-22:44:07.866 INFO - Done: [get: https://ohmyboss1.dsml.ru/login]
-22:44:07.868 INFO - Executing: [maximise window])
-22:44:07.879 INFO - Done: [maximise window]
-22:44:07.881 INFO - Executing: [find element: By.cssSelector: input[name=email]])
-22:44:07.898 INFO - Done: [find element: By.cssSelector: input[name=email]]
-22:44:07.901 INFO - Executing: [send keys: 34 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]])
-22:44:07.971 INFO - Done: [send keys: 34 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]]
-22:44:07.974 INFO - Executing: [find element: By.cssSelector: input[name=password]])
-22:44:07.993 INFO - Done: [find element: By.cssSelector: input[name=password]]
-22:44:07.995 INFO - Executing: [send keys: 35 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]])
-22:44:08.046 INFO - Done: [send keys: 35 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]]
-22:44:08.048 INFO - Executing: [find element: By.xpath: //button/span[2]])
-22:44:08.058 INFO - Done: [find element: By.xpath: //button/span[2]]
-22:44:08.060 INFO - Executing: [click: 36 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button/span[2]]])
-22:44:08.131 INFO - Done: [click: 36 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button/span[2]]]
-22:44:08.133 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:44:08.167 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:44:08.681 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
-22:44:08.703 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
-22:44:08.705 INFO - Executing: [is displayed: 37 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]])
-22:44:08.719 INFO - Done: [is displayed: 37 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]]
-22:44:08.722 INFO - Executing: [find element: By.xpath: //button[@type='button']])
-22:44:08.732 INFO - Done: [find element: By.xpath: //button[@type='button']]
-22:44:08.733 INFO - Executing: [click: 38 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[@type='button']]])
-22:44:08.770 INFO - Done: [click: 38 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //button[@type='button']]]
-22:44:08.773 INFO - Executing: [find elements: By.xpath: //a[contains(text(),'�������')]])
-22:44:08.795 INFO - Done: [find elements: By.xpath: //a[contains(text(),'�������')]]
-22:44:08.797 INFO - Executing: [is displayed: 39 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]])
-22:44:08.984 INFO - Done: [is displayed: 39 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]]
-22:44:08.987 INFO - Executing: [find element: By.xpath: //a[contains(text(),'�������')]])
-22:44:09.000 INFO - Done: [find element: By.xpath: //a[contains(text(),'�������')]]
-22:44:09.001 INFO - Executing: [click: 39 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]])
-22:44:09.067 INFO - Done: [click: 39 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //a[contains(text(),'�������')]]]
-22:44:09.070 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]])
-22:44:09.092 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'�������')]]
-22:44:09.094 INFO - Executing: [is displayed: 40 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]])
-22:44:09.110 INFO - Done: [is displayed: 40 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //ng-component/div/div/div[contains(.,'�������')]]]
-22:44:09.113 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������� ������')]])
-22:44:09.124 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������� ������')]]
-22:44:09.631 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������� ������')]])
-22:44:10.188 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������� ������')]]
-22:44:10.190 INFO - Executing: [is displayed: 41 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]])
-22:44:10.204 INFO - Done: [is displayed: 41 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //span[contains(.,'�������� ������')]]]
-22:44:10.206 INFO - Executing: [find element: By.cssSelector: .custom-form-control-input])
-22:44:10.216 INFO - Done: [find element: By.cssSelector: .custom-form-control-input]
-22:44:10.218 INFO - Executing: [click: 42 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]])
-22:44:10.266 INFO - Done: [click: 42 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]]
-22:44:10.268 INFO - Executing: [find element: By.cssSelector: .custom-form-control-input])
-22:44:10.282 INFO - Done: [find element: By.cssSelector: .custom-form-control-input]
-22:44:10.284 INFO - Executing: [clear: 42 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]])
-22:44:10.302 INFO - Done: [clear: 42 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input]]
-22:44:10.305 INFO - Executing: [find element: By.cssSelector: .custom-form-control-input])
-22:44:10.328 INFO - Done: [find element: By.cssSelector: .custom-form-control-input]
-22:44:10.330 INFO - Executing: [send keys: 42 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 7, 6, 5]])
-22:44:10.685 INFO - Done: [send keys: 42 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> css selector: .custom-form-control-input], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 1, 7, 6, 5]]
-22:44:10.692 INFO - Executing: [find element: By.xpath: (//button[@type='button'])[8]])
-22:44:10.701 INFO - Done: [find element: By.xpath: (//button[@type='button'])[8]]
-22:44:10.703 INFO - Executing: [click: 43 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: (//button[@type='button'])[8]]])
-22:44:10.751 INFO - Done: [click: 43 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: (//button[@type='button'])[8]]]
-22:44:10.753 INFO - Executing: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1765')]])
-22:44:10.766 INFO - Done: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1765')]]
-22:44:10.768 INFO - Executing: [is displayed: 44 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1765')]]])
-22:44:10.782 INFO - Done: [is displayed: 44 [[ChromeDriver: chrome on XP (9edb8e5973dda765db294017587f2838)] -> xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'������ �������� ������ 1765')]]]
-22:44:10.785 INFO - Executing: [delete session: db7a0c67-19c2-4550-ad7b-2e61c6c99e5f])
-22:44:11.605 INFO - Done: [delete session: db7a0c67-19c2-4550-ad7b-2e61c6c99e5f]
+[1605379078.048][WARNING]: Timed out connecting to Chrome, retrying...
+21:38:00.076 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Create Poll, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:38:00.083 INFO - Executing: [get: https://ohmyboss1.dsml.ru/login])
+21:38:00.867 INFO - Done: [get: https://ohmyboss1.dsml.ru/login]
+21:38:00.870 INFO - Executing: [maximise window])
+[1605379082.874][WARNING]: Timed out connecting to Chrome, retrying...
+21:38:04.985 INFO - Done: [maximise window]
+21:38:04.989 INFO - Executing: [find element: By.cssSelector: input[name=email]])
+21:38:05.007 INFO - Done: [find element: By.cssSelector: input[name=email]]
+21:38:05.011 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]])
+21:38:05.086 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]]
+21:38:05.089 INFO - Executing: [find element: By.cssSelector: input[name=password]])
+21:38:05.100 INFO - Done: [find element: By.cssSelector: input[name=password]]
+21:38:05.104 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]])
+21:38:05.145 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]]
+21:38:05.147 INFO - Executing: [find element: By.xpath: //button/span[2]])
+21:38:05.158 INFO - Done: [find element: By.xpath: //button/span[2]]
+21:38:05.161 INFO - Executing: [click: 2 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button/span[2]]])
+21:38:05.283 INFO - Done: [click: 2 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button/span[2]]]
+21:38:05.291 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
+21:38:05.304 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
+21:38:05.810 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
+21:38:05.892 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
+21:38:05.894 INFO - Executing: [is displayed: 3 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]])
+21:38:05.905 INFO - Done: [is displayed: 3 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]]
+21:38:05.910 INFO - Executing: [find element: By.xpath: //a[contains(.,'������������ ������')]])
+21:38:05.922 INFO - Done: [find element: By.xpath: //a[contains(.,'������������ ������')]]
+21:38:05.924 INFO - Executing: [click: 4 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //a[contains(.,'������������ ������')]]])
+21:38:06.003 INFO - Done: [click: 4 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //a[contains(.,'������������ ������')]]]
+21:38:06.006 INFO - Executing: [find element: By.xpath: //button[contains(.,'�������� �����')]])
+21:38:06.016 INFO - Done: [find element: By.xpath: //button[contains(.,'�������� �����')]]
+21:38:06.019 INFO - Executing: [click: 5 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�������� �����')]]])
+21:38:06.194 INFO - Done: [click: 5 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�������� �����')]]]
+21:38:06.198 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'��������')]])
+21:38:06.209 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'��������')]]
+21:38:06.211 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'��������')]]])
+21:38:06.223 INFO - Done: [is displayed: 6 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'��������')]]]
+21:38:06.226 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:06.238 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:06.240 INFO - Executing: [click: 7 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:06.333 INFO - Done: [click: 7 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:06.336 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:06.344 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:06.347 INFO - Executing: [send keys: 7 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �,  , 1, 0, 8, 4]])
+21:38:06.451 INFO - Done: [send keys: 7 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �,  , 1, 0, 8, 4]]
+21:38:06.454 INFO - Executing: [find element: By.xpath: //textarea[@name='comment']])
+21:38:06.463 INFO - Done: [find element: By.xpath: //textarea[@name='comment']]
+21:38:06.465 INFO - Executing: [click: 8 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']]])
+21:38:06.516 INFO - Done: [click: 8 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']]]
+21:38:11.517 INFO - Executing: [find element: By.xpath: //textarea[@name='comment']])
+21:38:11.531 INFO - Done: [find element: By.xpath: //textarea[@name='comment']]
+21:38:11.534 INFO - Executing: [send keys: 8 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �,  , �,  , �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �]])
+21:38:11.682 INFO - Done: [send keys: 8 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �,  , �,  , �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �]]
+21:38:11.684 INFO - Executing: [find element: By.xpath: //span[contains(.,'���������')]])
+21:38:11.695 INFO - Done: [find element: By.xpath: //span[contains(.,'���������')]]
+21:38:11.697 INFO - Executing: [click: 9 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]])
+21:38:11.762 INFO - Done: [click: 9 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]]
+21:38:11.764 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
+21:38:11.777 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
+21:38:11.778 INFO - Executing: [click: 10 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]])
+21:38:11.826 INFO - Done: [click: 10 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]]
+21:38:11.829 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]])
+21:38:11.844 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]]
+21:38:11.846 INFO - Executing: [is displayed: 11 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]])
+21:38:11.857 INFO - Done: [is displayed: 11 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]]
+21:38:11.860 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������� ������')]])
+21:38:11.874 INFO - Done: [find element: By.xpath: //span[contains(.,'�������� ������')]]
+21:38:11.876 INFO - Executing: [click: 12 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������')]]])
+21:38:11.927 INFO - Done: [click: 12 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������')]]]
+21:38:11.929 INFO - Executing: [find element: By.xpath: //input[@name='text']])
+21:38:11.949 INFO - Done: [find element: By.xpath: //input[@name='text']]
+21:38:11.953 INFO - Executing: [click: 13 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']]])
+21:38:12.094 INFO - Done: [click: 13 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']]]
+21:38:12.097 INFO - Executing: [find element: By.xpath: //input[@name='text']])
+21:38:12.106 INFO - Done: [find element: By.xpath: //input[@name='text']]
+21:38:12.109 INFO - Executing: [send keys: 13 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �, �]])
+21:38:12.190 INFO - Done: [send keys: 13 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �, �]]
+21:38:12.193 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������� ������� ������')]])
+21:38:12.202 INFO - Done: [find element: By.xpath: //span[contains(.,'�������� ������� ������')]]
+21:38:12.204 INFO - Executing: [click: 14 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������� ������')]]])
+21:38:12.256 INFO - Done: [click: 14 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������� ������')]]]
+21:38:12.259 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������� ������� ������')]])
+21:38:12.267 INFO - Done: [find element: By.xpath: //span[contains(.,'�������� ������� ������')]]
+21:38:12.269 INFO - Executing: [click: 14 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������� ������')]]])
+21:38:12.295 INFO - Done: [click: 14 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������� ������')]]]
+21:38:12.298 INFO - Executing: [find element: By.xpath: //input[@name='text0']])
+21:38:12.311 INFO - Done: [find element: By.xpath: //input[@name='text0']]
+21:38:12.313 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']], [1, 1]])
+21:38:12.351 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']], [1, 1]]
+21:38:12.353 INFO - Executing: [find element: By.xpath: //input[@name='text1']])
+21:38:12.364 INFO - Done: [find element: By.xpath: //input[@name='text1']]
+21:38:12.366 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']], [2, 2]])
+21:38:12.403 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']], [2, 2]]
+21:38:12.405 INFO - Executing: [find element: By.xpath: //div[3]/div[2]/button[2]])
+21:38:12.416 INFO - Done: [find element: By.xpath: //div[3]/div[2]/button[2]]
+21:38:12.418 INFO - Executing: [click: 17 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button[2]]])
+21:38:12.473 INFO - Done: [click: 17 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button[2]]]
+21:38:12.475 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �������')]])
+21:38:12.488 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �������')]]
+21:38:12.993 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �������')]])
+21:38:13.000 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �������')]]
+21:38:13.502 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �������')]])
+21:38:13.512 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �������')]]
+21:38:14.016 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �������')]])
+21:38:14.031 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �������')]]
+21:38:14.034 INFO - Executing: [find elements: By.xpath: //div[3][contains(.,'�������� ������')]])
+21:38:14.045 INFO - Done: [find elements: By.xpath: //div[3][contains(.,'�������� ������')]]
+21:38:14.047 INFO - Executing: [is displayed: 19 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3][contains(.,'�������� ������')]]])
+21:38:14.058 INFO - Done: [is displayed: 19 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3][contains(.,'�������� ������')]]]
+21:38:14.060 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������� �����������')]])
+21:38:14.073 INFO - Done: [find element: By.xpath: //span[contains(.,'�������� �����������')]]
+21:38:14.074 INFO - Executing: [click: 20 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� �����������')]]])
+21:38:14.127 INFO - Done: [click: 20 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� �����������')]]]
+21:38:14.129 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:14.138 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:14.140 INFO - Executing: [click: 21 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:14.200 INFO - Done: [click: 21 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:14.202 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:14.210 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:14.212 INFO - Executing: [send keys: 21 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]])
+21:38:14.296 INFO - Done: [send keys: 21 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]]
+21:38:14.298 INFO - Executing: [find element: By.xpath: //input[@name='comment']])
+21:38:14.309 INFO - Done: [find element: By.xpath: //input[@name='comment']]
+21:38:14.311 INFO - Executing: [click: 22 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']]])
+21:38:14.348 INFO - Done: [click: 22 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']]]
+21:38:14.349 INFO - Executing: [find element: By.xpath: //input[@name='comment']])
+21:38:14.357 INFO - Done: [find element: By.xpath: //input[@name='comment']]
+21:38:14.359 INFO - Executing: [send keys: 22 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]])
+21:38:14.447 INFO - Done: [send keys: 22 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]]
+21:38:14.449 INFO - Executing: [find element: By.xpath: //input[@name='description']])
+21:38:14.461 INFO - Done: [find element: By.xpath: //input[@name='description']]
+21:38:14.463 INFO - Executing: [click: 23 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']]])
+21:38:14.523 INFO - Done: [click: 23 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']]]
+21:38:14.525 INFO - Executing: [find element: By.xpath: //input[@name='description']])
+21:38:14.532 INFO - Done: [find element: By.xpath: //input[@name='description']]
+21:38:14.534 INFO - Executing: [send keys: 23 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']], [�, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]])
+21:38:14.625 INFO - Done: [send keys: 23 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']], [�, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]]
+21:38:14.627 INFO - Executing: [find element: By.xpath: //div[3]/div[2]/button/span])
+21:38:14.639 INFO - Done: [find element: By.xpath: //div[3]/div[2]/button/span]
+21:38:14.640 INFO - Executing: [click: 24 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button/span]])
+21:38:14.690 INFO - Done: [click: 24 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button/span]]
+21:38:14.692 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �����������')]])
+21:38:14.704 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �����������')]]
+21:38:15.208 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �����������')]])
+21:38:15.217 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �����������')]]
+21:38:15.718 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'���������� �����������')]])
+21:38:15.727 INFO - Done: [find elements: By.xpath: //h3[contains(.,'���������� �����������')]]
+21:38:15.730 INFO - Executing: [find elements: By.xpath: //div[3][contains(.,'�������� �����������')]])
+21:38:15.741 INFO - Done: [find elements: By.xpath: //div[3][contains(.,'�������� �����������')]]
+21:38:15.742 INFO - Executing: [is displayed: 26 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3][contains(.,'�������� �����������')]]])
+21:38:15.753 INFO - Done: [is displayed: 26 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3][contains(.,'�������� �����������')]]]
+21:38:15.755 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
+21:38:15.763 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
+21:38:15.764 INFO - Executing: [click: 27 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]])
+21:38:15.827 INFO - Done: [click: 27 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]]
+21:38:17.830 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'���������')]])
+21:38:17.844 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'���������')]]
+21:38:17.846 INFO - Executing: [is displayed: 28 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'���������')]]])
+21:38:17.857 INFO - Done: [is displayed: 28 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'���������')]]]
+21:38:17.859 INFO - Executing: [find element: By.xpath: //div/button[2]])
+21:38:17.870 INFO - Done: [find element: By.xpath: //div/button[2]]
+21:38:17.872 INFO - Executing: [click: 29 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[2]]])
+21:38:17.909 INFO - Done: [click: 29 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[2]]]
+21:38:17.911 INFO - Executing: [find elements: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:17.920 INFO - Done: [find elements: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:17.922 INFO - Executing: [is displayed: 30 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div[2]/div[2]]])
+21:38:17.930 INFO - Done: [is displayed: 30 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div[2]/div[2]]]
+21:38:17.932 INFO - Executing: [find element: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:17.944 INFO - Done: [find element: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:17.946 INFO - Executing: [mousemove: 30 true])
+21:38:17.971 INFO - Done: [mousemove: 30 true]
+21:38:17.973 INFO - Executing: [mousedown: no args])
+21:38:17.979 INFO - Done: [mousedown: no args]
+21:38:17.981 INFO - Executing: [find element: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:17.989 INFO - Done: [find element: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:17.991 INFO - Executing: [mousemove: 30 true])
+21:38:18.010 INFO - Done: [mousemove: 30 true]
+21:38:18.012 INFO - Executing: [find element: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:18.022 INFO - Done: [find element: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:18.024 INFO - Executing: [mousemove: 31 true])
+21:38:18.041 INFO - Done: [mousemove: 31 true]
+21:38:18.044 INFO - Executing: [mouseup: nothing])
+21:38:18.065 INFO - Done: [mouseup: nothing]
+21:38:18.068 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'������ �������������� �������?')]])
+21:38:18.078 INFO - Done: [find elements: By.xpath: //h3[contains(.,'������ �������������� �������?')]]
+21:38:18.080 INFO - Executing: [is displayed: 32 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'������ �������������� �������?')]]])
+21:38:18.091 INFO - Done: [is displayed: 32 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'������ �������������� �������?')]]]
+21:38:18.094 INFO - Executing: [find element: By.xpath: //button[contains(.,'��, ������')]])
+21:38:18.106 INFO - Done: [find element: By.xpath: //button[contains(.,'��, ������')]]
+21:38:18.108 INFO - Executing: [click: 33 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'��, ������')]]])
+21:38:18.166 INFO - Done: [click: 33 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'��, ������')]]]
+21:38:18.168 INFO - Executing: [find elements: By.xpath: //div[2]/div/div[2]/div/div[2]])
+21:38:18.180 INFO - Done: [find elements: By.xpath: //div[2]/div/div[2]/div/div[2]]
+21:38:18.182 INFO - Executing: [is displayed: 34 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div[2]/div/div[2]]])
+21:38:18.193 INFO - Done: [is displayed: 34 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div[2]/div/div[2]]]
+21:38:18.196 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������������� ������� ������')]])
+21:38:18.206 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������������� ������� ������')]]
+21:38:18.207 INFO - Executing: [is displayed: 37 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� ������� ������')]]])
+21:38:18.218 INFO - Done: [is displayed: 37 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� ������� ������')]]]
+21:38:18.221 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������')]])
+21:38:18.231 INFO - Done: [find element: By.xpath: //span[contains(.,'�������')]]
+21:38:18.233 INFO - Executing: [click: 38 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������')]]])
+21:38:18.282 INFO - Done: [click: 38 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������')]]]
+21:38:18.284 INFO - Executing: [find element: By.xpath: //ng-select/div])
+21:38:18.296 INFO - Done: [find element: By.xpath: //ng-select/div]
+21:38:18.297 INFO - Executing: [click: 39 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-select/div]])
+21:38:18.363 INFO - Done: [click: 39 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-select/div]]
+21:38:18.365 INFO - Executing: [find element: By.xpath: //div[2]/div[2]/span])
+21:38:18.376 INFO - Done: [find element: By.xpath: //div[2]/div[2]/span]
+21:38:18.378 INFO - Executing: [click: 40 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div[2]/span]])
+21:38:18.474 INFO - Done: [click: 40 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div[2]/span]]
+21:38:18.476 INFO - Executing: [find element: By.xpath: //ng-select[2]/div])
+21:38:18.488 INFO - Done: [find element: By.xpath: //ng-select[2]/div]
+21:38:18.489 INFO - Executing: [click: 41 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-select[2]/div]])
+21:38:18.542 INFO - Done: [click: 41 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-select[2]/div]]
+21:38:18.544 INFO - Executing: [find element: By.xpath: //div[47]/span])
+21:38:18.557 INFO - Done: [find element: By.xpath: //div[47]/span]
+21:38:18.558 INFO - Executing: [click: 42 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[47]/span]])
+21:38:18.613 INFO - Done: [click: 42 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[47]/span]]
+21:38:18.615 INFO - Executing: [find element: By.xpath: //span[contains(.,'���������')]])
+21:38:18.626 INFO - Done: [find element: By.xpath: //span[contains(.,'���������')]]
+21:38:18.628 INFO - Executing: [click: 43 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]])
+21:38:18.666 INFO - Done: [click: 43 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]]
+21:38:18.668 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������������� ������� ������')]])
+21:38:18.677 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������������� ������� ������')]]
+21:38:18.680 INFO - Executing: [find element: By.xpath: (//button[@type='button'])[7]])
+21:38:18.691 INFO - Done: [find element: By.xpath: (//button[@type='button'])[7]]
+21:38:18.693 INFO - Executing: [click: 44 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//button[@type='button'])[7]]])
+21:38:18.726 INFO - Done: [click: 44 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//button[@type='button'])[7]]]
+21:38:18.728 INFO - Executing: [find elements: By.xpath: //span[contains(.,'�������')]])
+21:38:18.739 INFO - Done: [find elements: By.xpath: //span[contains(.,'�������')]]
+21:38:18.741 INFO - Executing: [is displayed: 45 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������')]]])
+21:38:18.751 INFO - Done: [is displayed: 45 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������')]]]
+21:38:18.754 INFO - Executing: [find elements: By.xpath: //span[contains(.,'������� 17 - 64')]])
+21:38:18.768 INFO - Done: [find elements: By.xpath: //span[contains(.,'������� 17 - 64')]]
+21:38:18.774 INFO - Executing: [is displayed: 46 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������� 17 - 64')]]])
+21:38:18.795 INFO - Done: [is displayed: 46 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������� 17 - 64')]]]
+21:38:18.813 INFO - Executing: [find element: By.xpath: (//button[@type='button'])[6]])
+21:38:18.822 INFO - Done: [find element: By.xpath: (//button[@type='button'])[6]]
+21:38:18.824 INFO - Executing: [click: 47 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//button[@type='button'])[6]]])
+21:38:18.872 INFO - Done: [click: 47 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//button[@type='button'])[6]]]
+21:38:18.874 INFO - Executing: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div[2][contains(.,'�� ������������� ������ �������?')]])
+21:38:18.883 INFO - Done: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div[2][contains(.,'�� ������������� ������ �������?')]]
+21:38:18.885 INFO - Executing: [is displayed: 48 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-modal/div/div/div[2]/div/div[2][contains(.,'�� ������������� ������ �������?')]]])
+21:38:18.895 INFO - Done: [is displayed: 48 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-modal/div/div/div[2]/div/div[2][contains(.,'�� ������������� ������ �������?')]]]
+21:38:18.897 INFO - Executing: [find element: By.xpath: //div[3]/div[2]/button])
+21:38:18.907 INFO - Done: [find element: By.xpath: //div[3]/div[2]/button]
+21:38:18.908 INFO - Executing: [click: 49 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button]])
+21:38:18.989 INFO - Done: [click: 49 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button]]
+21:38:18.991 INFO - Executing: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div[2][contains(.,'�� ������������� ������ �������?')]])
+21:38:18.999 INFO - Done: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div[2][contains(.,'�� ������������� ������ �������?')]]
+21:38:19.001 INFO - Executing: [find elements: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:19.010 INFO - Done: [find elements: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:19.016 INFO - Executing: [is displayed: 50 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div[2]/div[2]]])
+21:38:19.028 INFO - Done: [is displayed: 50 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div[2]/div[2]]]
+21:38:19.032 INFO - Executing: [find element: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:19.040 INFO - Done: [find element: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:19.043 INFO - Executing: [mousemove: 50 true])
+21:38:19.056 INFO - Done: [mousemove: 50 true]
+21:38:19.058 INFO - Executing: [mousedown: no args])
+21:38:19.062 INFO - Done: [mousedown: no args]
+21:38:19.064 INFO - Executing: [find element: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:19.073 INFO - Done: [find element: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:19.075 INFO - Executing: [mousemove: 50 true])
+21:38:19.092 INFO - Done: [mousemove: 50 true]
+21:38:19.094 INFO - Executing: [find element: By.xpath: //div[2]/div/div[2]/div[2]])
+21:38:19.101 INFO - Done: [find element: By.xpath: //div[2]/div/div[2]/div[2]]
+21:38:19.102 INFO - Executing: [mousemove: 51 true])
+21:38:19.125 INFO - Done: [mousemove: 51 true]
+21:38:19.127 INFO - Executing: [mouseup: nothing])
+21:38:19.146 INFO - Done: [mouseup: nothing]
+21:38:19.148 INFO - Executing: [find element: By.xpath: //button[contains(.,'���')]])
+21:38:19.159 INFO - Done: [find element: By.xpath: //button[contains(.,'���')]]
+21:38:19.161 INFO - Executing: [click: 52 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'���')]]])
+21:38:19.199 INFO - Done: [click: 52 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'���')]]]
+21:38:19.201 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
+21:38:19.210 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
+21:38:19.211 INFO - Executing: [click: 53 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]])
+21:38:19.267 INFO - Done: [click: 53 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]]
+21:38:21.270 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'���������')]])
+21:38:21.283 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'���������')]]
+21:38:21.285 INFO - Executing: [is displayed: 54 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'���������')]]])
+21:38:21.295 INFO - Done: [is displayed: 54 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'���������')]]]
+21:38:21.298 INFO - Executing: [find element: By.xpath: //input[@name='day']])
+21:38:21.308 INFO - Done: [find element: By.xpath: //input[@name='day']]
+21:38:21.310 INFO - Executing: [click: 55 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='day']]])
+21:38:21.384 INFO - Done: [click: 55 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='day']]]
+21:38:21.386 INFO - Executing: [find elements: By.xpath: //div/button[@aria-label='���� �����']])
+21:38:21.397 INFO - Done: [find elements: By.xpath: //div/button[@aria-label='���� �����']]
+21:38:21.399 INFO - Executing: [is displayed: 56 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:21.412 INFO - Done: [is displayed: 56 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:21.916 INFO - Executing: [is displayed: 56 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:21.934 INFO - Done: [is displayed: 56 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:21.938 INFO - Executing: [find element: By.xpath: //div/button[@aria-label='���� �����']])
+21:38:21.949 INFO - Done: [find element: By.xpath: //div/button[@aria-label='���� �����']]
+21:38:21.952 INFO - Executing: [click: 56 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:22.008 INFO - Done: [click: 56 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:22.010 INFO - Executing: [find elements: By.xpath: //span[contains(.,'5')]])
+21:38:22.024 INFO - Done: [find elements: By.xpath: //span[contains(.,'5')]]
+21:38:22.026 INFO - Executing: [is displayed: 57 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'5')]]])
+21:38:22.037 INFO - Done: [is displayed: 57 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'5')]]]
+21:38:22.040 INFO - Executing: [find element: By.xpath: //span[contains(.,'5')]])
+21:38:22.049 INFO - Done: [find element: By.xpath: //span[contains(.,'5')]]
+21:38:22.051 INFO - Executing: [click: 57 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'5')]]])
+21:38:22.099 INFO - Done: [click: 57 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'5')]]]
+21:38:22.101 INFO - Executing: [find elements: By.xpath: //span[contains(.,'5')]])
+21:38:22.108 INFO - Done: [find elements: By.xpath: //span[contains(.,'5')]]
+21:38:22.611 INFO - Executing: [find elements: By.xpath: //span[contains(.,'5')]])
+21:38:22.623 INFO - Done: [find elements: By.xpath: //span[contains(.,'5')]]
+21:38:22.627 INFO - Executing: [find element: By.xpath: //input[@name='startTime']])
+21:38:22.643 INFO - Done: [find element: By.xpath: //input[@name='startTime']]
+21:38:22.645 INFO - Executing: [click: 61 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='startTime']]])
+21:38:22.683 INFO - Done: [click: 61 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='startTime']]]
+21:38:22.687 INFO - Executing: [find elements: By.xpath: //owl-date-time-timer-box[2]/button/span])
+21:38:22.698 INFO - Done: [find elements: By.xpath: //owl-date-time-timer-box[2]/button/span]
+21:38:22.700 INFO - Executing: [is displayed: 62 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]])
+21:38:22.712 INFO - Done: [is displayed: 62 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]]
+21:38:23.215 INFO - Executing: [is displayed: 62 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]])
+21:38:23.230 INFO - Done: [is displayed: 62 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]]
+21:38:23.234 INFO - Executing: [find element: By.xpath: //owl-date-time-timer-box[2]/button/span])
+21:38:23.249 INFO - Done: [find element: By.xpath: //owl-date-time-timer-box[2]/button/span]
+21:38:23.250 INFO - Executing: [click: 62 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]])
+21:38:23.279 INFO - Done: [click: 62 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]]
+21:38:23.281 INFO - Executing: [find element: By.xpath: //span[contains(.,'���������')]])
+21:38:23.289 INFO - Done: [find element: By.xpath: //span[contains(.,'���������')]]
+21:38:23.291 INFO - Executing: [click: 64 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]])
+21:38:23.340 INFO - Done: [click: 64 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]]
+21:38:23.343 INFO - Executing: [find elements: By.xpath: //span[contains(.,'���������')]])
+21:38:23.355 INFO - Done: [find elements: By.xpath: //span[contains(.,'���������')]]
+21:38:23.860 INFO - Executing: [find elements: By.xpath: //span[contains(.,'���������')]])
+21:38:23.866 INFO - Done: [find elements: By.xpath: //span[contains(.,'���������')]]
+21:38:23.868 INFO - Executing: [find element: By.xpath: //ng-select/div/div/div[3]])
+21:38:23.878 INFO - Done: [find element: By.xpath: //ng-select/div/div/div[3]]
+21:38:23.880 INFO - Executing: [click: 65 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-select/div/div/div[3]]])
+21:38:23.917 INFO - Done: [click: 65 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-select/div/div/div[3]]]
+21:38:23.919 INFO - Executing: [find element: By.xpath: (//input[@name='day'])[2]])
+21:38:23.929 INFO - Done: [find element: By.xpath: (//input[@name='day'])[2]]
+21:38:23.932 INFO - Executing: [click: 66 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//input[@name='day'])[2]]])
+21:38:24.003 INFO - Done: [click: 66 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//input[@name='day'])[2]]]
+21:38:24.006 INFO - Executing: [find elements: By.xpath: //div/button[@aria-label='���� �����']])
+21:38:24.013 INFO - Done: [find elements: By.xpath: //div/button[@aria-label='���� �����']]
+21:38:24.014 INFO - Executing: [is displayed: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:24.027 INFO - Done: [is displayed: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:24.531 INFO - Executing: [is displayed: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:24.538 INFO - Done: [is displayed: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:24.540 INFO - Executing: [find element: By.xpath: //div/button[@aria-label='���� �����']])
+21:38:24.548 INFO - Done: [find element: By.xpath: //div/button[@aria-label='���� �����']]
+21:38:24.550 INFO - Executing: [click: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:24.595 INFO - Done: [click: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:24.597 INFO - Executing: [find element: By.xpath: //div/button[@aria-label='���� �����']])
+21:38:24.603 INFO - Done: [find element: By.xpath: //div/button[@aria-label='���� �����']]
+21:38:24.605 INFO - Executing: [click: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]])
+21:38:24.643 INFO - Done: [click: 67 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/button[@aria-label='���� �����']]]
+21:38:24.645 INFO - Executing: [find elements: By.xpath: //span[contains(.,'25')]])
+21:38:24.657 INFO - Done: [find elements: By.xpath: //span[contains(.,'25')]]
+21:38:24.657 INFO - Executing: [is displayed: 68 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'25')]]])
+21:38:24.667 INFO - Done: [is displayed: 68 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'25')]]]
+21:38:24.669 INFO - Executing: [find element: By.xpath: //span[contains(.,'25')]])
+21:38:24.678 INFO - Done: [find element: By.xpath: //span[contains(.,'25')]]
+21:38:24.680 INFO - Executing: [click: 68 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'25')]]])
+21:38:24.714 INFO - Done: [click: 68 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'25')]]]
+21:38:24.715 INFO - Executing: [find elements: By.xpath: //span[contains(.,'25')]])
+21:38:24.724 INFO - Done: [find elements: By.xpath: //span[contains(.,'25')]]
+21:38:25.226 INFO - Executing: [find elements: By.xpath: //span[contains(.,'25')]])
+21:38:25.233 INFO - Done: [find elements: By.xpath: //span[contains(.,'25')]]
+21:38:25.235 INFO - Executing: [find element: By.xpath: (//input[@name='startTime'])[2]])
+21:38:25.245 INFO - Done: [find element: By.xpath: (//input[@name='startTime'])[2]]
+21:38:25.246 INFO - Executing: [click: 69 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//input[@name='startTime'])[2]]])
+21:38:25.280 INFO - Done: [click: 69 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: (//input[@name='startTime'])[2]]]
+21:38:25.282 INFO - Executing: [find elements: By.xpath: //owl-date-time-timer-box[2]/button/span])
+21:38:25.289 INFO - Done: [find elements: By.xpath: //owl-date-time-timer-box[2]/button/span]
+21:38:25.291 INFO - Executing: [is displayed: 70 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]])
+21:38:25.301 INFO - Done: [is displayed: 70 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]]
+21:38:25.804 INFO - Executing: [is displayed: 70 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]])
+21:38:25.820 INFO - Done: [is displayed: 70 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]]
+21:38:25.825 INFO - Executing: [find element: By.xpath: //owl-date-time-timer-box[2]/button/span])
+21:38:25.837 INFO - Done: [find element: By.xpath: //owl-date-time-timer-box[2]/button/span]
+21:38:25.839 INFO - Executing: [click: 70 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]])
+21:38:25.876 INFO - Done: [click: 70 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //owl-date-time-timer-box[2]/button/span]]
+21:38:25.878 INFO - Executing: [find element: By.xpath: //span[contains(.,'���������')]])
+21:38:25.884 INFO - Done: [find element: By.xpath: //span[contains(.,'���������')]]
+21:38:25.887 INFO - Executing: [click: 72 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]])
+21:38:25.929 INFO - Done: [click: 72 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]]
+21:38:25.931 INFO - Executing: [find element: By.xpath: //div[2]/app-dates/div/div[3]/ng-select/div/div/div[3]])
+21:38:25.943 INFO - Done: [find element: By.xpath: //div[2]/app-dates/div/div[3]/ng-select/div/div/div[3]]
+21:38:25.945 INFO - Executing: [click: 73 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/app-dates/div/div[3]/ng-select/div/div/div[3]]])
+21:38:25.985 INFO - Done: [click: 73 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/app-dates/div/div[3]/ng-select/div/div/div[3]]]
+21:38:25.988 INFO - Executing: [find elements: By.xpath: //form/div/div[3]/div[2]])
+21:38:25.997 INFO - Done: [find elements: By.xpath: //form/div/div[3]/div[2]]
+21:38:25.999 INFO - Executing: [is displayed: 74 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //form/div/div[3]/div[2]]])
+21:38:26.012 INFO - Done: [is displayed: 74 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //form/div/div[3]/div[2]]]
+21:38:26.015 INFO - Executing: [find element: By.xpath: //span[contains(.,'������� �����')]])
+21:38:26.033 INFO - Done: [find element: By.xpath: //span[contains(.,'������� �����')]]
+21:38:26.035 INFO - Executing: [click: 75 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������� �����')]]])
+21:38:26.097 INFO - Done: [click: 75 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������� �����')]]]
+21:38:26.098 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]])
+21:38:26.110 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]]
+21:38:26.615 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]])
+21:38:26.637 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]]
+21:38:27.144 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]])
+21:38:27.158 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]]
+21:38:27.662 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]])
+21:38:27.669 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]]
+21:38:28.170 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]])
+21:38:28.177 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]]
+21:38:28.679 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]])
+21:38:28.687 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� ��������!')]]
+21:38:28.690 INFO - Executing: [is displayed: 76 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������� ��������!')]]])
+21:38:28.700 INFO - Done: [is displayed: 76 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������� ��������!')]]]
+21:38:28.702 INFO - Executing: [find elements: By.xpath: //button[contains(.,'�������')]])
+21:38:28.713 INFO - Done: [find elements: By.xpath: //button[contains(.,'�������')]]
+21:38:28.714 INFO - Executing: [is displayed: 77 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�������')]]])
+21:38:28.723 INFO - Done: [is displayed: 77 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�������')]]]
+21:38:28.726 INFO - Executing: [find element: By.xpath: //button[contains(.,'�������')]])
+21:38:28.735 INFO - Done: [find element: By.xpath: //button[contains(.,'�������')]]
+21:38:28.737 INFO - Executing: [click: 77 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�������')]]])
+21:38:28.807 INFO - Done: [click: 77 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�������')]]]
+21:38:28.809 INFO - Executing: [find element: By.xpath: //div/div/div])
+21:38:28.825 INFO - Done: [find element: By.xpath: //div/div/div]
+21:38:28.827 INFO - Executing: [click: 78 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/div/div]])
+21:38:28.857 INFO - Done: [click: 78 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/div/div]]
+21:38:28.859 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
+21:38:28.868 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
+21:38:28.870 INFO - Executing: [click: 79 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]])
+21:38:28.923 INFO - Done: [click: 79 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]]
+21:38:28.925 INFO - Executing: [get: https://ohmyboss1.dsml.ru/login])
+21:38:29.351 INFO - Done: [get: https://ohmyboss1.dsml.ru/login]
+21:38:29.352 INFO - Executing: [maximise window])
+21:38:29.356 INFO - Done: [maximise window]
+21:38:29.358 INFO - Executing: [find element: By.cssSelector: input[name=email]])
+21:38:29.366 INFO - Done: [find element: By.cssSelector: input[name=email]]
+21:38:29.367 INFO - Executing: [send keys: 80 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]])
+21:38:29.427 INFO - Done: [send keys: 80 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=email]], [m, a, i, l, @, i, n, n, o, l, i, n, e, ., p, r, o]]
+21:38:29.429 INFO - Executing: [find element: By.cssSelector: input[name=password]])
+21:38:29.439 INFO - Done: [find element: By.cssSelector: input[name=password]]
+21:38:29.441 INFO - Executing: [send keys: 81 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]])
+21:38:29.483 INFO - Done: [send keys: 81 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> css selector: input[name=password]], [P, @, s, s, w, 0, r, d]]
+21:38:29.485 INFO - Executing: [find element: By.xpath: //button/span[2]])
+21:38:29.495 INFO - Done: [find element: By.xpath: //button/span[2]]
+21:38:29.496 INFO - Executing: [click: 82 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button/span[2]]])
+21:38:29.532 INFO - Done: [click: 82 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button/span[2]]]
+21:38:29.535 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
+21:38:29.549 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
+21:38:30.050 INFO - Executing: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]])
+21:38:30.065 INFO - Done: [find elements: By.xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]
+21:38:30.067 INFO - Executing: [is displayed: 83 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]])
+21:38:30.076 INFO - Done: [is displayed: 83 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //ng-component/div/div/div[contains(.,'������������ ������')]]]
+21:38:30.078 INFO - Executing: [find element: By.xpath: //input[@name='condition']])
+21:38:30.087 INFO - Done: [find element: By.xpath: //input[@name='condition']]
+21:38:30.089 INFO - Executing: [click: 84 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='condition']]])
+21:38:30.126 INFO - Done: [click: 84 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='condition']]]
+21:38:30.127 INFO - Executing: [find element: By.xpath: //input[@name='condition']])
+21:38:30.134 INFO - Done: [find element: By.xpath: //input[@name='condition']]
+21:38:30.136 INFO - Executing: [clear: 84 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='condition']]])
+21:38:30.148 INFO - Done: [clear: 84 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='condition']]]
+21:38:30.150 INFO - Executing: [find element: By.xpath: //input[@name='condition']])
+21:38:30.158 INFO - Done: [find element: By.xpath: //input[@name='condition']]
+21:38:30.160 INFO - Executing: [send keys: 84 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='condition']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �,  , 1, 0, 8, 4]])
+21:38:30.227 INFO - Done: [send keys: 84 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='condition']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �,  , 1, 0, 8, 4]]
+21:38:30.228 INFO - Executing: [find element: By.xpath: //form/div[2]/button])
+21:38:30.240 INFO - Done: [find element: By.xpath: //form/div[2]/button]
+21:38:30.242 INFO - Executing: [click: 85 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //form/div[2]/button]])
+21:38:30.462 INFO - Done: [click: 85 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //form/div[2]/button]]
+21:38:30.464 INFO - Executing: [find elements: By.xpath: //button[contains(.,'���������������')]])
+21:38:30.476 INFO - Done: [find elements: By.xpath: //button[contains(.,'���������������')]]
+21:38:30.477 INFO - Executing: [is displayed: 86 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'���������������')]]])
+21:38:30.488 INFO - Done: [is displayed: 86 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'���������������')]]]
+21:38:30.490 INFO - Executing: [find element: By.xpath: //button[contains(.,'���������������')]])
+21:38:30.500 INFO - Done: [find element: By.xpath: //button[contains(.,'���������������')]]
+21:38:30.501 INFO - Executing: [click: 86 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'���������������')]]])
+21:38:30.601 INFO - Done: [click: 86 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'���������������')]]]
+21:38:30.603 INFO - Executing: [find elements: By.xpath: //clr-dg-cell[2]/div/div[contains(.,'�������� ����� 1084')]])
+21:38:30.614 INFO - Done: [find elements: By.xpath: //clr-dg-cell[2]/div/div[contains(.,'�������� ����� 1084')]]
+21:38:31.117 INFO - Executing: [find elements: By.xpath: //clr-dg-cell[2]/div/div[contains(.,'�������� ����� 1084')]])
+21:38:31.126 INFO - Done: [find elements: By.xpath: //clr-dg-cell[2]/div/div[contains(.,'�������� ����� 1084')]]
+21:38:31.127 INFO - Executing: [is displayed: 87 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-dg-cell[2]/div/div[contains(.,'�������� ����� 1084')]]])
+21:38:31.136 INFO - Done: [is displayed: 87 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-dg-cell[2]/div/div[contains(.,'�������� ����� 1084')]]]
+21:38:31.153 INFO - Executing: [find element: By.xpath: //clr-dropdown/button])
+21:38:31.162 INFO - Done: [find element: By.xpath: //clr-dropdown/button]
+21:38:31.163 INFO - Executing: [click: 88 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-dropdown/button]])
+21:38:31.197 INFO - Done: [click: 88 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-dropdown/button]]
+21:38:31.200 INFO - Executing: [find element: By.xpath: //a[contains(text(),'�������������')]])
+21:38:31.211 INFO - Done: [find element: By.xpath: //a[contains(text(),'�������������')]]
+21:38:31.213 INFO - Executing: [click: 89 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //a[contains(text(),'�������������')]]])
+21:38:31.362 INFO - Done: [click: 89 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //a[contains(text(),'�������������')]]]
+21:38:31.364 INFO - Executing: [find elements: By.xpath: //input[@name='title']])
+21:38:31.375 INFO - Done: [find elements: By.xpath: //input[@name='title']]
+21:38:31.376 INFO - Executing: [is displayed: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:31.386 INFO - Done: [is displayed: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:31.389 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:31.399 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:31.400 INFO - Executing: [click: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:31.449 INFO - Done: [click: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:31.450 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:31.461 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:31.462 INFO - Executing: [clear: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:31.476 INFO - Done: [clear: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:31.478 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:31.485 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:31.487 INFO - Executing: [send keys: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �,  , 1, 0, 5, 3]])
+21:38:31.574 INFO - Done: [send keys: 90 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �,  , �, �, �, �, �,  , 1, 0, 5, 3]]
+21:38:31.576 INFO - Executing: [find element: By.xpath: //textarea[@name='comment']])
+21:38:31.586 INFO - Done: [find element: By.xpath: //textarea[@name='comment']]
+21:38:31.587 INFO - Executing: [click: 91 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']]])
+21:38:31.633 INFO - Done: [click: 91 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']]]
+21:38:36.636 INFO - Executing: [find element: By.xpath: //textarea[@name='comment']])
+21:38:36.652 INFO - Done: [find element: By.xpath: //textarea[@name='comment']]
+21:38:36.654 INFO - Executing: [send keys: 91 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �,  , �,  , �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 2]])
+21:38:36.789 INFO - Done: [send keys: 91 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //textarea[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �,  , �,  , �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �,  , 2]]
+21:38:36.791 INFO - Executing: [find element: By.xpath: //button[contains(.,'�����')]])
+21:38:36.801 INFO - Done: [find element: By.xpath: //button[contains(.,'�����')]]
+21:38:36.802 INFO - Executing: [click: 92 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]])
+21:38:36.884 INFO - Done: [click: 92 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //button[contains(.,'�����')]]]
+21:38:36.887 INFO - Executing: [find element: By.xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='eyeClosed']])
+21:38:36.903 INFO - Done: [find element: By.xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='eyeClosed']]
+21:38:36.905 INFO - Executing: [click: 93 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='eyeClosed']]])
+21:38:36.953 INFO - Done: [click: 93 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='eyeClosed']]]
+21:38:36.956 INFO - Executing: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'�������� ������')]])
+21:38:36.965 INFO - Done: [find elements: By.xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'�������� ������')]]
+21:38:36.966 INFO - Executing: [is displayed: 94 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'�������� ������')]]])
+21:38:36.977 INFO - Done: [is displayed: 94 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //clr-modal/div/div/div[2]/div/div/div/div[contains(.,'�������� ������')]]]
+21:38:36.979 INFO - Executing: [find elements: By.xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'11')]])
+21:38:36.991 INFO - Done: [find elements: By.xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'11')]]
+21:38:36.992 INFO - Executing: [is displayed: 95 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'11')]]])
+21:38:37.001 INFO - Done: [is displayed: 95 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'11')]]]
+21:38:37.003 INFO - Executing: [find elements: By.xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'22')]])
+21:38:37.012 INFO - Done: [find elements: By.xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'22')]]
+21:38:37.014 INFO - Executing: [is displayed: 96 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'22')]]])
+21:38:37.025 INFO - Done: [is displayed: 96 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div/div[2]/div/div[2]/div[2]/div/div[contains(.,'22')]]]
+21:38:37.027 INFO - Executing: [find element: By.xpath: //div[3]/div[2]/button/span[contains(.,'�������������')]])
+21:38:37.048 INFO - Done: [find element: By.xpath: //div[3]/div[2]/button/span[contains(.,'�������������')]]
+21:38:37.050 INFO - Executing: [click: 97 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button/span[contains(.,'�������������')]]])
+21:38:37.117 INFO - Done: [click: 97 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[3]/div[2]/button/span[contains(.,'�������������')]]]
+21:38:38.120 INFO - Executing: [find elements: By.xpath: //span[contains(.,'������')]])
+21:38:38.131 INFO - Done: [find elements: By.xpath: //span[contains(.,'������')]]
+21:38:38.132 INFO - Executing: [is displayed: 98 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������')]]])
+21:38:38.143 INFO - Done: [is displayed: 98 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������')]]]
+21:38:38.145 INFO - Executing: [find element: By.xpath: //span[contains(.,'������')]])
+21:38:38.155 INFO - Done: [find element: By.xpath: //span[contains(.,'������')]]
+21:38:38.156 INFO - Executing: [click: 98 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������')]]])
+21:38:38.191 INFO - Done: [click: 98 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'������')]]]
+21:38:38.193 INFO - Executing: [find elements: By.xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']])
+21:38:38.202 INFO - Done: [find elements: By.xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']]
+21:38:38.203 INFO - Executing: [is displayed: 99 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']]])
+21:38:38.213 INFO - Done: [is displayed: 99 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']]]
+21:38:39.216 INFO - Executing: [find element: By.xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']])
+21:38:39.232 INFO - Done: [find element: By.xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']]
+21:38:39.233 INFO - Executing: [click: 99 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']]])
+21:38:39.278 INFO - Done: [click: 99 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� ������']/..//BUTTON/app-icon[@name='edit']]]
+21:38:39.279 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������������� �������')]])
+21:38:39.290 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������������� �������')]]
+21:38:39.292 INFO - Executing: [is displayed: 100 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� �������')]]])
+21:38:39.301 INFO - Done: [is displayed: 100 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� �������')]]]
+21:38:39.804 INFO - Executing: [is displayed: 100 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� �������')]]])
+21:38:39.829 INFO - Done: [is displayed: 100 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� �������')]]]
+21:38:39.834 INFO - Executing: [find element: By.xpath: //input[@name='text']])
+21:38:39.846 INFO - Done: [find element: By.xpath: //input[@name='text']]
+21:38:39.848 INFO - Executing: [click: 101 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']]])
+21:38:39.882 INFO - Done: [click: 101 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']]]
+21:38:39.885 INFO - Executing: [find element: By.xpath: //input[@name='text']])
+21:38:39.893 INFO - Done: [find element: By.xpath: //input[@name='text']]
+21:38:39.894 INFO - Executing: [clear: 101 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']]])
+21:38:39.907 INFO - Done: [clear: 101 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']]]
+21:38:39.908 INFO - Executing: [find element: By.xpath: //input[@name='text']])
+21:38:39.916 INFO - Done: [find element: By.xpath: //input[@name='text']]
+21:38:39.917 INFO - Executing: [send keys: 101 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �]])
+21:38:40.010 INFO - Done: [send keys: 101 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text']], [�, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �, �, �, �]]
+21:38:40.012 INFO - Executing: [find element: By.xpath: //input[@name='text0']])
+21:38:40.024 INFO - Done: [find element: By.xpath: //input[@name='text0']]
+21:38:40.026 INFO - Executing: [click: 102 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']]])
+21:38:40.066 INFO - Done: [click: 102 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']]]
+21:38:40.068 INFO - Executing: [find element: By.xpath: //input[@name='text0']])
+21:38:40.077 INFO - Done: [find element: By.xpath: //input[@name='text0']]
+21:38:40.078 INFO - Executing: [clear: 102 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']]])
+21:38:40.090 INFO - Done: [clear: 102 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']]]
+21:38:40.092 INFO - Executing: [find element: By.xpath: //input[@name='text0']])
+21:38:40.100 INFO - Done: [find element: By.xpath: //input[@name='text0']]
+21:38:40.101 INFO - Executing: [send keys: 102 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']], [3, 3]])
+21:38:40.140 INFO - Done: [send keys: 102 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text0']], [3, 3]]
+21:38:40.142 INFO - Executing: [find element: By.xpath: //input[@name='text1']])
+21:38:40.151 INFO - Done: [find element: By.xpath: //input[@name='text1']]
+21:38:40.153 INFO - Executing: [click: 103 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']]])
+21:38:40.207 INFO - Done: [click: 103 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']]]
+21:38:40.209 INFO - Executing: [find element: By.xpath: //input[@name='text1']])
+21:38:40.216 INFO - Done: [find element: By.xpath: //input[@name='text1']]
+21:38:40.217 INFO - Executing: [clear: 103 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']]])
+21:38:40.230 INFO - Done: [clear: 103 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']]]
+21:38:40.232 INFO - Executing: [find element: By.xpath: //input[@name='text1']])
+21:38:40.240 INFO - Done: [find element: By.xpath: //input[@name='text1']]
+21:38:40.242 INFO - Executing: [send keys: 103 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']], [4, 4]])
+21:38:40.267 INFO - Done: [send keys: 103 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text1']], [4, 4]]
+21:38:40.269 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������� ������� ������')]])
+21:38:40.279 INFO - Done: [find element: By.xpath: //span[contains(.,'�������� ������� ������')]]
+21:38:40.281 INFO - Executing: [click: 104 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������� ������')]]])
+21:38:40.345 INFO - Done: [click: 104 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������� ������� ������')]]]
+21:38:40.346 INFO - Executing: [find element: By.xpath: //input[@name='text2']])
+21:38:40.358 INFO - Done: [find element: By.xpath: //input[@name='text2']]
+21:38:40.360 INFO - Executing: [click: 105 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text2']]])
+21:38:40.416 INFO - Done: [click: 105 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text2']]]
+21:38:40.418 INFO - Executing: [find element: By.xpath: //input[@name='text2']])
+21:38:40.425 INFO - Done: [find element: By.xpath: //input[@name='text2']]
+21:38:40.426 INFO - Executing: [clear: 105 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text2']]])
+21:38:40.437 INFO - Done: [clear: 105 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text2']]]
+21:38:40.439 INFO - Executing: [find element: By.xpath: //input[@name='text2']])
+21:38:40.446 INFO - Done: [find element: By.xpath: //input[@name='text2']]
+21:38:40.448 INFO - Executing: [send keys: 105 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text2']], [5, 5]])
+21:38:40.474 INFO - Done: [send keys: 105 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='text2']], [5, 5]]
+21:38:40.475 INFO - Executing: [find element: By.xpath: //span[text()='���������']])
+21:38:40.485 INFO - Done: [find element: By.xpath: //span[text()='���������']]
+21:38:40.486 INFO - Executing: [click: 106 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[text()='���������']]])
+21:38:40.540 INFO - Done: [click: 106 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[text()='���������']]]
+21:38:40.542 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]])
+21:38:40.553 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]]
+21:38:40.554 INFO - Executing: [is displayed: 107 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]])
+21:38:40.563 INFO - Done: [is displayed: 107 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]]
+21:38:40.565 INFO - Executing: [find elements: By.xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']])
+21:38:40.577 INFO - Done: [find elements: By.xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']]
+21:38:40.578 INFO - Executing: [is displayed: 108 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']]])
+21:38:40.590 INFO - Done: [is displayed: 108 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']]]
+21:38:42.591 INFO - Executing: [find element: By.xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']])
+21:38:42.603 INFO - Done: [find element: By.xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']]
+21:38:42.604 INFO - Executing: [click: 108 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']]])
+21:38:42.636 INFO - Done: [click: 108 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='eyeClosed']]]
+21:38:42.638 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������� �����������')]])
+21:38:42.649 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������� �����������')]]
+21:38:42.651 INFO - Executing: [is displayed: 109 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������� �����������')]]])
+21:38:42.660 INFO - Done: [is displayed: 109 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������� �����������')]]]
+21:38:42.663 INFO - Executing: [find element: By.xpath: //span[contains(.,'�������')]])
+21:38:42.674 INFO - Done: [find element: By.xpath: //span[contains(.,'�������')]]
+21:38:42.676 INFO - Executing: [click: 110 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������')]]])
+21:38:42.712 INFO - Done: [click: 110 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'�������')]]]
+21:38:42.714 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]])
+21:38:42.723 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]]
+21:38:42.725 INFO - Executing: [is displayed: 107 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]])
+21:38:42.732 INFO - Done: [is displayed: 107 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]]
+21:38:42.735 INFO - Executing: [find element: By.xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='edit']])
+21:38:42.743 INFO - Done: [find element: By.xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='edit']]
+21:38:42.745 INFO - Executing: [click: 111 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='edit']]])
+21:38:42.796 INFO - Done: [click: 111 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //DIV[text()='�������� �����������']/..//BUTTON/app-icon[@name='edit']]]
+21:38:42.798 INFO - Executing: [find elements: By.xpath: //h3[contains(.,'�������������� �����������')]])
+21:38:42.809 INFO - Done: [find elements: By.xpath: //h3[contains(.,'�������������� �����������')]]
+21:38:42.811 INFO - Executing: [is displayed: 112 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� �����������')]]])
+21:38:42.821 INFO - Done: [is displayed: 112 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //h3[contains(.,'�������������� �����������')]]]
+21:38:43.823 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:43.830 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:43.832 INFO - Executing: [click: 113 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:43.863 INFO - Done: [click: 113 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:43.865 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:43.873 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:43.874 INFO - Executing: [clear: 113 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]])
+21:38:43.886 INFO - Done: [clear: 113 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']]]
+21:38:43.887 INFO - Executing: [find element: By.xpath: //input[@name='title']])
+21:38:43.894 INFO - Done: [find element: By.xpath: //input[@name='title']]
+21:38:43.896 INFO - Executing: [send keys: 113 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]])
+21:38:44.004 INFO - Done: [send keys: 113 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='title']], [�, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]]
+21:38:45.006 INFO - Executing: [find element: By.xpath: //input[@name='comment']])
+21:38:45.017 INFO - Done: [find element: By.xpath: //input[@name='comment']]
+21:38:45.019 INFO - Executing: [click: 114 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']]])
+21:38:45.050 INFO - Done: [click: 114 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']]]
+21:38:45.051 INFO - Executing: [find element: By.xpath: //input[@name='comment']])
+21:38:45.067 INFO - Done: [find element: By.xpath: //input[@name='comment']]
+21:38:45.068 INFO - Executing: [clear: 114 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']]])
+21:38:45.082 INFO - Done: [clear: 114 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']]]
+21:38:45.083 INFO - Executing: [find element: By.xpath: //input[@name='comment']])
+21:38:45.091 INFO - Done: [find element: By.xpath: //input[@name='comment']]
+21:38:45.093 INFO - Executing: [send keys: 114 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]])
+21:38:45.233 INFO - Done: [send keys: 114 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='comment']], [�, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]]
+21:38:46.236 INFO - Executing: [find element: By.xpath: //input[@name='description']])
+21:38:46.246 INFO - Done: [find element: By.xpath: //input[@name='description']]
+21:38:46.248 INFO - Executing: [click: 115 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']]])
+21:38:46.296 INFO - Done: [click: 115 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']]]
+21:38:46.298 INFO - Executing: [find element: By.xpath: //input[@name='description']])
+21:38:46.306 INFO - Done: [find element: By.xpath: //input[@name='description']]
+21:38:46.308 INFO - Executing: [clear: 115 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']]])
+21:38:46.319 INFO - Done: [clear: 115 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']]]
+21:38:46.321 INFO - Executing: [find element: By.xpath: //input[@name='description']])
+21:38:46.328 INFO - Done: [find element: By.xpath: //input[@name='description']]
+21:38:46.331 INFO - Executing: [send keys: 115 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']], [�, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]])
+21:38:46.464 INFO - Done: [send keys: 115 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //input[@name='description']], [�, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �, �,  , �, �, �, �, �, �, �, �,  , �, �, �,  , �, �, �, �, �, �, �, �, �, �, �]]
+21:38:47.465 INFO - Executing: [find element: By.xpath: //span[contains(.,'���������')]])
+21:38:47.476 INFO - Done: [find element: By.xpath: //span[contains(.,'���������')]]
+21:38:47.478 INFO - Executing: [click: 116 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]])
+21:38:47.529 INFO - Done: [click: 116 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //span[contains(.,'���������')]]]
+21:38:47.531 INFO - Executing: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]])
+21:38:47.540 INFO - Done: [find elements: By.xpath: //div[2]/div/div/div[contains(.,'�������')]]
+21:38:47.542 INFO - Executing: [is displayed: 107 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]])
+21:38:47.549 INFO - Done: [is displayed: 107 [[ChromeDriver: chrome on XP (5f3469af5df23483db05efa16d5457f1)] -> xpath: //div[2]/div/div/div[contains(.,'�������')]]]
