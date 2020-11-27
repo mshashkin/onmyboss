@@ -29,20 +29,23 @@ delimiter_name2 = `Отредактированный разделитель`
 delimiter_comment2 = `Отредактированный комментарий для разделителя`
 description_for_comment2 = `Отредактированное описание для разделителя`
 
+Titlenotification = `Тестовое предварительное уведомление ${phoneNumber}`;
+Headernotification = `Заголовок предварительного уведомления`;
+Commentnotification = `Текст предварительного уведомления`;
 
+Titlenotification2 = `Отредактирование тестовое предварительное уведомление ${phoneNumber}`;
+Headernotification2 = `Отредактированный заголовок предварительного уведомления`;
+Commentnotification2 = `Отредактированный текст предварительного уведомления`;
 
+Slack = `Slack`
+LK = `Личный кабинет`
+Application = `Приложение`
+Telephone = `Телефон`
+Email = `E-mail`
 
+Type_notification = `Предварительное уведомление`
+Type_notification2 = `Начало опроса`
 
-
-
-
-
-
-
-
-// Titlenotification = `Тестовое предварительное уведомление ${phoneNumber}`;
-// Headernotification = `Заголовок предварительного уведомления`;
-// Commentnotification = `Текст предварительного уведомления`;
 Name2 = `Тестовый опрос ${phoneNumber2}`;
 Comment2 = `Комментарий к тестовому опросу 2`;
 // Checkbox2 = `Анонимный`;
@@ -114,6 +117,7 @@ module.exports = {
       .click("//button[contains(.,'Да, внести')]")
       .waitForElementVisible("//div[2]/div/div[2]/div/div[2]", 10000, 'Аудитория выбралась')
       .waitForElementVisible("//h3[contains(.,'Дополнительные условия отбора')]", 10000, 'Открылся pop up редектирования аудитории')
+      .pause(1000)
       .click(`//span[contains(.,'${Gender}')]`)
       .click("//ng-select/div")
       .click("//div[2]/div[2]/span")
@@ -173,39 +177,42 @@ module.exports = {
 
 
       //Создание уведомления
-      // .click("//span[contains(.,'Добавить уведомление')]")
-      // .waitForElementVisible("//h3[contains(.,'Добавление уведомления')]", 10000, 'Открылась форма добавления уведомления')
-      // .click("//input[@name='title']")
-      // .setValue("//input[@name='title']", Titlenotification)
-      // .click("//input[@name='header']")
-      // .setValue("//input[@name='header']", Headernotification)
-      // .click("//input[@name='comment']")
-      // .setValue("//input[@name='comment']", Commentnotification)
-      // .click("//span[contains(.,'Slack')]")
-      // .click("//span[contains(.,'Личный кабинет')]")
-      // .click("//form/ng-select/div")
-      // .waitForElementVisible("//div[2]/div[2]/span", 10000, 'Доступен выбор типа уведомления')
-      // .click("//div[2]/div[2]/span")
-      // .click("(//input[@name='day'])[3]")
-      // .waitForElementVisible("//owl-date-time-calendar/div/button[2]/span", 10000, 'Достпуна кнопка переключения месяцев')
-      // .click("//owl-date-time-calendar/div/button[2]/span")
-      // .waitForElementVisible("//span[contains(.,'5')]", 10000, 'Достпуна кнопка дня')
-      // .click("//span[contains(.,'5')]")
-      // .waitForElementNotPresent("//span[contains(.,'5')]", 10000, 'Pop up выбора даты закрылся')
-      // .click("//form/app-dates/div/div[2]/label/input")
-      // .waitForElementVisible("//owl-date-time-container[@id='owl-dt-picker-9']/div[2]/owl-date-time-timer/owl-date-time-timer-box/button", 10000, 'Достпуна кнопка переключение времени')
-      // .click("//owl-date-time-container[@id='owl-dt-picker-9']/div[2]/owl-date-time-timer/owl-date-time-timer-box/button")
-      // .click("(//button[@type='button'])[17]")
-      // .click("//form/app-dates/div/div[3]/ng-select/div/div/div[3]")
-      // .click("//div[3]/div[2]/button/span")
+      .click("//span[contains(.,'Добавить уведомление')]")
+      .waitForElementVisible("//h3[contains(.,'Добавление уведомления')]", 10000, 'Открылась форма добавления уведомления')
+      .click("//input[@name='title']")
+      .setValue("//input[@name='title']", Titlenotification)
+      .click("//input[@name='header']")
+      .setValue("//input[@name='header']", Headernotification)
+      .click("//input[@name='comment']")
+      .setValue("//input[@name='comment']", Commentnotification)
+      .click(`//span[contains(.,'${Slack}')]`)
+      .click(`//span[contains(.,'${LK}')]`)
+      .click(`//form/ng-select/div`)
+      .waitForElementVisible(`//div[2]/div/span[contains(.,'${Type_notification}')]`, 10000, 'Доступен выбор типа уведомления')
+      .click(`//div[2]/div/span[contains(.,'${Type_notification}')]`)
+      .click("(//input[@name='day'])[3]")
+      .waitForElementVisible("//owl-date-time-calendar/div/button[2]/span", 10000, 'Достпуна кнопка переключения месяцев')
+      .click("//owl-date-time-calendar/div/button[2]/span")
+      .waitForElementVisible("//span[contains(.,'5')]", 10000, 'Достпуна кнопка дня')
+      .click("//span[contains(.,'5')]")
+      .waitForElementNotPresent("//span[contains(.,'5')]", 10000, 'Pop up выбора даты закрылся')
+      .click("//form/app-dates/div/div[2]/label/input")
+      .waitForElementVisible("//owl-date-time-timer-box/button/span", 10000, 'Достпуна кнопка переключение времени')
+      .click("//owl-date-time-timer-box/button/span")
+      .click("(//button[@type='button'])[17]")
+      .click("//form/app-dates/div/div[3]/ng-select/div/div/div[3]")
+      .click("//div[3]/div[2]/button/span")
+      .waitForElementNotPresent(`//h3[contains(.,'Редактирование уведомления')]`, 10000, 'Открылся pop up редактирования уведомления')
 
+
+      .waitForElementVisible("//span[contains(.,'Создать опрос')]", 10000, 'Кнопка создать опрос доступна')
       .click("//span[contains(.,'Создать опрос')]")
       .waitForElementVisible("//h3[contains(.,'Обратите внимание!')]", 10000, 'Появляется уведомление "Уведомление может быть выслано в течении 1 часа."')
       .waitForElementVisible("//button[contains(.,'Понятно')]", 10000, 'Появилась кнопка Понятно')
       .click("//button[contains(.,'Понятно')]")
 
       // Перелогинивание
-    browser.page.Relogin().Open()
+    // browser.page.Relogin().Open()
 
       // Поиск 
     browser
@@ -227,8 +234,9 @@ module.exports = {
       .click(`//input[@name='title']`)
       .clearValue(`//input[@name='title']`)
       .setValue(`//input[@name='title']`, Name2)
-      .click("//textarea[@name='comment']")
       .pause(5000)
+      .click("//textarea[@name='comment']")
+      .clearValue(`//textarea[@name='comment']`)
       .setValue("//textarea[@name='comment']", Comment2)
       .click(button_next)
 
@@ -296,11 +304,151 @@ module.exports = {
       .setValue("//input[@name='description']", description_for_comment2)
       .pause(1000)
       .click(`//span[contains(.,'Сохранить')]`)
+      .waitForElementNotPresent(`//h3[contains(.,'Редактирование разделителя')]`, 10000, 'Pop up редактирования разделителя закрылся')
       .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Вопросы')]`, 10000, 'Открылась страница добавления вопросов')
       .click(button_next)
 
+      // Редактирование Аудитории
+      .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Аудитории')]`, 10000, 'Открылась страница добавления вопросов')
 
-      .pause(50000)
+      .click(button_next)
+      
+      // Редактирование Настройки
+      .waitForElementVisible(`//div[2]/div/div/div[contains(.,'Настройки')]`, 10000, 'Открылась страница добавления вопросов')
+      .click("//input[@name='day']")
+      .waitForElementVisible("//div/button[@aria-label='След месяц']", 10000, 'Достпуна кнопка переключения месяцев')
+      .click("//div/button[@aria-label='След месяц']")
+      .waitForElementVisible("//span[contains(.,'5')]", 10000, 'Достпуна кнопка дня')
+      .click("//span[contains(.,'5')]")
+      .waitForElementNotPresent("//span[contains(.,'5')]", 10000, 'Pop up выбора даты закрылся')
+      .click("//input[@name='startTime']")
+      .waitForElementVisible("//owl-date-time-timer-box[2]/button/span", 10000, 'Достпуна кнопка переключение времени')
+      .click("//owl-date-time-timer-box[2]/button/span")
+      .click("//div[2]/div/button[2]/span") // Кнпока сохранить
+      .waitForElementNotPresent("//div[2]/div/button[2]/span", 10000, 'Pop up выбора времени закрылся')
+      .click("//ng-select/div/div/div[3]")
 
+      // Выбор даты завершения уведомления
+      .click("(//input[@name='day'])[2]")
+      .waitForElementVisible("//div/button[@aria-label='След месяц']", 10000, 'Достпуна кнопка переключения месяцев')
+      .click("//div/button[@aria-label='След месяц']")
+      .click("//div/button[@aria-label='След месяц']")
+      .waitForElementVisible("//span[contains(.,'25')]", 10000, 'Достпуна кнопка дня')
+      .click("//span[contains(.,'25')]")
+      .waitForElementNotPresent("//span[contains(.,'25')]", 10000, 'Pop up выбора даты закрылся')
+      .click("(//input[@name='startTime'])[2]")
+      .waitForElementVisible("//owl-date-time-timer-box[2]/button/span", 10000, 'Достпуна кнопка переключение времени')
+      .click("//owl-date-time-timer-box[2]/button/span")
+      .click("//div[2]/div/button[2]/span") // Кнпока сохранить
+      .click("//div[2]/app-dates/div/div[3]/ng-select/div/div/div[3]")
+      .waitForElementVisible("//form/div/div[3]/div[2]", 10000, 'Появляется время жизни уведомления')
+
+      // Проверка создания уведомления
+      .waitForElementVisible(`//div[2]/div[2]/div[2]/div[2]/div[contains(.,'${Titlenotification}')]`, 10000, 'Название уведомления корректно')
+      .waitForElementVisible(`//div[2]/div[2]/div[2]/div[2]/div[2][contains(.,'${Headernotification}')]`, 10000, 'Заголовок уведомления корректно')
+      .waitForElementVisible(`//div[2]/div[2]/div[3][contains(.,'${Commentnotification}')]`, 10000, 'Текст уведомления корректно')
+      .waitForElementVisible(`//span[contains(.,'${Slack}')]`, 10000, 'Цель 1 уведомления корреткна')
+      .waitForElementVisible(`//span[contains(.,'${LK}')]`, 10000, 'Цель 2 уведомления корреткна')
+      
+      // Редактирование уведомления
+      .waitForElementVisible(`//div[5]/button`, 10000, 'Кнпока редактирования  уведомления доступна')
+      .click(`//div[5]/button`)
+      .waitForElementVisible(`//h3[contains(.,'Редактирование уведомления')]`, 10000, 'Открылся pop up редактирования уведомления')
+      .click(`//input[@name='title']`)
+      .clearValue(`//input[@name='title']`)
+      .setValue(`//input[@name='title']`, Titlenotification2)
+      .click(`//input[@name='header']`)
+      .clearValue(`//input[@name='header']`)
+      .setValue(`//input[@name='header']`, Headernotification2)
+      .click(`//input[@name='comment']`)
+      .clearValue(`//input[@name='comment']`)
+      .setValue(`//input[@name='comment']`, Commentnotification2)
+      .waitForElementVisible(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Slack}']`, 10000, 'Открылась форма добавления уведомления')
+      .click(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Slack}']`)
+      .waitForElementVisible(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${LK}']`, 10000, 'Открылась форма добавления уведомления')
+      .click(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${LK}']`)
+      .waitForElementVisible(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Application}']`, 10000, 'Открылась форма добавления уведомления')
+      .click(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Application}']`)
+      .waitForElementVisible(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Telephone}']`, 10000, 'Открылась форма добавления уведомления')
+      .click(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Telephone}']`)
+      .waitForElementVisible(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Email}']`, 10000, 'Открылась форма добавления уведомления')
+      .click(`//div[3]/app-custom-checkbox/label/span/span[2][text()='${Email}']`)
+      .click(`//form/ng-select/div`)
+      .waitForElementVisible(`//div[2]/div/span[contains(.,'${Type_notification2}')]`, 10000, 'Доступен выбор типа уведомления')
+      .click(`//div[2]/div/span[contains(.,'${Type_notification2}')]`)
+      .click("(//input[@name='day'])[3]")
+      .waitForElementVisible("//owl-date-time-calendar/div/button[2]/span", 10000, 'Достпуна кнопка переключения месяцев')
+      .click("//owl-date-time-calendar/div/button[2]/span")
+      .waitForElementVisible("//span[contains(.,'5')]", 10000, 'Достпуна кнопка дня')
+      .click("//span[contains(.,'5')]")
+      .waitForElementNotPresent("//span[contains(.,'5')]", 10000, 'Pop up выбора даты закрылся')
+      .click("//form/app-dates/div/div[2]/label/input")
+      .waitForElementVisible("//owl-date-time-timer-box/button/span", 10000, 'Достпуна кнопка переключение времени')
+      .click("//owl-date-time-timer-box/button/span")
+      .click("(//button[@type='button'])[17]")
+      .click("//form/app-dates/div/div[3]/ng-select/div/div/div[3]")
+      .click("//div[3]/div[2]/button/span")
+      .waitForElementNotPresent(`//h3[contains(.,'Редактирование уведомления')]`, 10000, 'Открылся pop up редактирования уведомления')
+
+
+      .click("//span[contains(.,'Сохранить опрос')]")
+
+      // Pop up сохранения 1
+      .waitForElementVisible("//clr-modal/div/div/div[2]/div/div[2][contains(.,'Вы действительно хотите изменить уже запущенный в работу опрос ? Внесенные изменения могут повлиять на результаты.')]", 10000, 'Появляется pop up сохранения')
+      .click("//span[contains(.,'Сохранить изменения')]")
+
+      // Pop up сохранения 2
+      .waitForElementVisible("//h3[contains(.,'Сохранение изменений')]", 10000, 'Появляется pop up сохранения изменения')
+      .click("//div[3]/button[2]") // Кнопка сохранить
+
+      // Pop up сохранения 3
+      .waitForElementVisible("//h3[contains(.,'Обратите внимание!')]", 10000, 'Появляется уведомление "Уведомление может быть выслано в течении 1 часа."')
+      .waitForElementVisible("//button[contains(.,'Понятно')]", 10000, 'Появилась кнопка Понятно')
+      .click("//button[contains(.,'Понятно')]")
+
+      // Перелогинивание
+    browser.page.Relogin().Open()
+
+      // Поиск 
+    browser
+      // .click(`//button[contains(.,'Запланированные')]`)
+      .click(`//input[@name='condition']`)
+      .clearValue(`//input[@name='condition']`)
+      .setValue(`//input[@name='condition']`, Name2)
+      .click(`//form/div[2]/button`)
+      .waitForElementVisible(`//button[contains(.,'Запланированные')]`, 10000, 'Кнопка Запланированные доступна')
+      .click(`//button[contains(.,'Запланированные')]`)
+      .waitForElementVisible(`//clr-dg-cell[2]/div/div[contains(.,'${Name2}')]`, 10000, 'В списке вопросов присутствует созданный опрос')
+
+      // Просмотр 
+      .waitForElementVisible(`//clr-dropdown/button`, 10000, 'Кнопка троеточие')
+      .click(`//clr-dropdown/button`)
+      .waitForElementVisible(`//a[contains(text(),'Редактировать')]`, 10000, 'Кнопка редактировать доступна')
+      .click(`//a[contains(text(),'Редактировать')]`)
+      .waitForElementVisible(`//input[@name='title']`, 10000, 'Форма загрузилась, поле ввода доступно')
+      .click(button_next)
+
+      .waitForElementVisible(`//DIV[text()='${question_title2}']/..//BUTTON/app-icon[@name='eyeClosed']`, 10000, 'Кнопка доступна')
+      .click(`//DIV[text()='${question_title2}']/..//BUTTON/app-icon[@name='eyeClosed']`)
+      .waitForElementVisible(`//clr-modal/div/div/div[2]/div/div/div/div[contains(.,'${question_title2}')]`, 10000, 'Название вопроса правильное')
+      .waitForElementVisible(`//div/div[2]/div/div[2]/div[2]/div/div[contains(.,'${answer_21}')]`, 10000, 'Название 1 ответа правильное')
+      .waitForElementVisible(`//div/div[2]/div/div[2]/div[2]/div/div[contains(.,'${answer_22}')]`, 10000, 'Название 2 ответа правильное')
+      .waitForElementVisible(`//div/div[2]/div/div[2]/div[2]/div/div[contains(.,'${answer_23}')]`, 10000, 'Название 3 ответа правильное')
+      .click(`//span[contains(.,'Отмена')]`)
+
+      .waitForElementVisible(`//DIV[text()='${delimiter_name2}']/..//BUTTON/app-icon[@name='eyeClosed']`, 10000, 'Опрос и кнопка глазок доступны')
+      .click(`//DIV[text()='${delimiter_name2}']/..//BUTTON/app-icon[@name='eyeClosed']`)
+      .waitForElementVisible(`//h3[contains(.,'${delimiter_name2}')]`, 10000, 'Название разделителя корректно')
+      .click(`//span[contains(.,'Закрыть')]`)
+      .click(button_next)
+      .click(button_next)
+
+      // Проверка редактирования уведомления
+      .waitForElementVisible(`//div[2]/div[2]/div[2]/div[2]/div[contains(.,'${Titlenotification2}')]`, 10000, 'Название уведомления корректно')
+      .waitForElementVisible(`//div[2]/div[2]/div[2]/div[2]/div[2][contains(.,'${Headernotification2}')]`, 10000, 'Заголовок уведомления корректно')
+      .waitForElementVisible(`//div[2]/div[2]/div[3][contains(.,'${Commentnotification2}')]`, 10000, 'Текст уведомления корректно')
+      .waitForElementVisible(`//span[contains(.,'${Application}')]`, 10000, 'Цель 1 уведомления корреткна')
+      .waitForElementVisible(`//span[contains(.,'${Telephone}')]`, 10000, 'Цель 2 уведомления корреткна')
+      .waitForElementVisible(`//span[contains(.,'${Email}')]`, 10000, 'Цель 3 уведомления корреткна')
   }
 };
